@@ -1,0 +1,38 @@
+/*
+ * Dynamico Settings CSS
+ *
+ * CSS Stylesheet for settings page on Appearance -> Pro Version
+ *
+ * @package Dynamico Pro
+ */
+
+/* License Settings */
+.dynamico-pro-settings-wrap {
+	margin: 25px 0 0;
+}
+
+.dynamico-pro-settings-wrap .license-status {
+	display: inline-block;
+	margin: 0 12px 0 0;
+	padding: 4px 8px;
+	background: #444;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.dynamico-pro-settings-wrap .license-active {
+	background: green;
+}
+
+.dynamico-pro-settings-wrap .license-invalid,
+.dynamico-pro-settings-wrap .license-expired {
+	background: red;
+}
+
+.dynamico-pro-settings-wrap .license-description {
+	margin: 16px 0 0;
+}
+
+.dynamico-pro-settings-wrap .license-renewal {
+	margin: 16px 0 0;
+}
