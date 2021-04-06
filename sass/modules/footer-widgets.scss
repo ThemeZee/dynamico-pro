@@ -25,8 +25,14 @@ body.wide-theme-layout .site {
 
 	.widget-title {
 		margin: -0.5rem -0.5rem 1rem;
+		padding: 0.5rem 0.75rem;
 		@include color(--footer-widgets-text-color);
 		@include background(--footer-widgets-title-color);
+		@include font-size(15);
+		@include font-family(--widget-title-font);
+		@include font-weight(--widget-title-font-weight);
+		@include text-transform(--widget-title-text-transform);
+		@include line-height(--title-line-height);
 	}
 
 	a:link,

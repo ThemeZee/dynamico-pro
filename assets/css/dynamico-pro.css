@@ -690,10 +690,21 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 
 .footer-widgets .widget .widget-title {
 	margin: -0.5rem -0.5rem 1rem;
+	padding: 0.5rem 0.75rem;
 	color: #fff;
 	color: var(--footer-widgets-text-color);
 	background-color: rgba(255, 255, 255, 0.1);
 	background-color: var(--footer-widgets-title-color);
+	font-size: 15px;
+	font-size: 0.9375rem;
+	font-family: "Ubuntu", arial, helvetica, sans-serif;
+	font-family: var(--widget-title-font);
+	font-weight: normal;
+	font-weight: var(--widget-title-font-weight);
+	text-transform: uppercase;
+	text-transform: var(--widget-title-text-transform);
+	line-height: 1.4;
+	line-height: var(--title-line-height);
 }
 
 .footer-widgets .widget a:link,
