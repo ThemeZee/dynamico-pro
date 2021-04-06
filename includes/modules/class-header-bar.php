@@ -42,7 +42,7 @@ class Dynamico_Pro_Header_Bar {
 		$theme_options = Dynamico_Pro_Customizer::get_theme_options();
 
 		// Check if there is content for the header bar.
-		if ( has_nav_menu( 'secondary' ) || has_nav_menu( 'social-header' ) ) : ?>
+		if ( has_nav_menu( 'secondary' ) || has_nav_menu( 'social-header-bar' ) ) : ?>
 
 			<div id="header-top" class="header-bar-wrap">
 
@@ -50,12 +50,12 @@ class Dynamico_Pro_Header_Bar {
 
 					<?php
 					// Check if there is a social icons top menu.
-					if ( has_nav_menu( 'social-header' ) ) :
+					if ( has_nav_menu( 'social-header-bar' ) ) :
 						?>
 
 						<div class="header-social-menu-wrap social-menu-wrap">
 
-							<?php Dynamico_Pro_Social_Icons::display_social_icons_menu( 'social-header' ); ?>
+							<?php Dynamico_Pro_Social_Icons::display_social_icons_menu( 'social-header-bar' ); ?>
 
 						</div>
 
