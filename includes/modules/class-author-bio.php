@@ -98,7 +98,7 @@ class Dynamico_Pro_Author_Bio {
 			'section'  => 'dynamico_section_post',
 			'settings' => 'dynamico_theme_options[author_bio]',
 			'type'     => 'checkbox',
-			'priority' => 145,
+			'priority' => 130,
 		) );
 	}
 

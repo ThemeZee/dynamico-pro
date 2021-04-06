@@ -575,7 +575,9 @@
 --------------------------------------------------------------*/
 .entry-author {
 	margin: 1.25rem 0 0;
-	padding: 0;
+	padding: 1rem;
+	background-color: #ededef;
+	background-color: var(--post-meta-background-color);
 	text-align: center;
 }
 
@@ -608,11 +610,12 @@
 		display: flex;
 		text-align: left;
 		margin-top: 1.5rem;
+		padding: 1.25rem;
 	}
 
 	.entry-author .author-avatar {
 		margin-left: 0;
-		margin-right: 1.5rem;
+		margin-right: 1.25rem;
 		margin-bottom: 0;
 		width: 30%;
 		max-width: 128px;
@@ -625,31 +628,9 @@
 	}
 }
 
-@media only screen and (min-width: 640px) {
-	.entry-author {
-		margin-top: 1.75rem;
-	}
-
-	.entry-author .author-heading .author-title {
-		font-size: 20px;
-		font-size: 1.25rem;
-	}
-}
-
 @media only screen and (min-width: 960px) {
-	.entry-author {
-		margin-top: 2rem;
-	}
-
 	.entry-author .author-avatar {
-		margin-right: 2rem;
 		min-width: 128px;
-	}
-}
-
-@media only screen and (min-width: 1280px) {
-	.entry-author {
-		margin-top: 2.5rem;
 	}
 }
 
