@@ -53,7 +53,7 @@ class Dynamico_Pro_Header_Bar {
 					if ( has_nav_menu( 'social-header-bar' ) ) :
 						?>
 
-						<div class="header-social-menu-wrap social-menu-wrap">
+						<div class="header-bar-social-menu-wrap social-menu-wrap">
 
 							<?php Dynamico_Pro_Social_Icons::display_social_icons_menu( 'social-header-bar' ); ?>
 
