@@ -3,8 +3,6 @@
 	padding: 1.25rem 1.25rem 0;
 	@include color(--footer-widgets-text-color);
 	@include background(--footer-widgets-background-color);
-	border-bottom: 1px solid;
-	@include border-color(--footer-widgets-border-color);
 }
 
 .footer-widgets-wrap {
@@ -22,9 +20,13 @@ body.wide-theme-layout .site {
 /* Footer Widget Styling */
 .footer-widgets .widget {
 	margin-bottom: 1.25rem;
+	padding: 1.5rem;
+	@include background(--footer-widgets-overlay-color);
 
 	.widget-title {
+		margin: -0.5rem -0.5rem 1rem;
 		@include color(--footer-widgets-text-color);
+		@include background(--footer-widgets-title-color);
 	}
 
 	a:link,
@@ -122,7 +124,7 @@ body.wide-theme-layout .site {
 	}
 
 	.footer-widget-column .widget:last-child {
-		flex-grow: 1;
+		flex-grow: 0;
 	}
 
 	/* Three Column Footer Widgets */
@@ -130,24 +132,6 @@ body.wide-theme-layout .site {
 	.footer-widget-column:nth-child(2):nth-last-child(2),
 	.footer-widget-column:nth-child(3):nth-last-child(1) {
 		width: 100%;
-	}
-}
-
-@media only screen and (min-width: 640px) {
-	.footer-widgets-background {
-		padding: 1.75rem 1.75rem 0;
-	}
-
-	.footer-widgets {
-		margin-right: -1.75rem;
-	}
-
-	.footer-widget-column {
-		padding-right: 1.75rem;
-	}
-
-	.footer-widgets .widget {
-		margin-bottom: 1.75rem;
 	}
 }
 
@@ -161,24 +145,6 @@ body.wide-theme-layout .site {
 	}
 }
 
-@media only screen and (min-width: 960px) {
-	.footer-widgets-background {
-		padding: 2rem 2rem 0;
-	}
-
-	.footer-widgets {
-		margin-right: -2rem;
-	}
-
-	.footer-widget-column {
-		padding-right: 2rem;
-	}
-
-	.footer-widgets .widget {
-		margin-bottom: 2rem;
-	}
-}
-
 @media only screen and (min-width: 1120px) {
 
 	/* Four Column Footer Widgets */
@@ -187,23 +153,5 @@ body.wide-theme-layout .site {
 	.footer-widget-column:nth-child(3):nth-last-child(2),
 	.footer-widget-column:nth-child(4):nth-last-child(1) {
 		width: 25%;
-	}
-}
-
-@media only screen and (min-width: 1280px) {
-	.footer-widgets-background {
-		padding: 2.5rem 2.5rem 0;
-	}
-
-	.footer-widgets {
-		margin-right: -2.5rem;
-	}
-
-	.footer-widget-column {
-		padding-right: 2.5rem;
-	}
-
-	.footer-widgets .widget {
-		margin-bottom: 2.5rem;
 	}
 }

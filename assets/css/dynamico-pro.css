@@ -17,9 +17,11 @@
 	--header-bar-hover-color: #333;
 	--header-bar-hover-text-color: #fff;
 	--footer-widgets-background-color: #333;
+	--footer-widgets-overlay-color: rgba(255, 255, 255, 0.05);
 	--footer-widgets-text-color: #fff;
 	--footer-widgets-link-color: rgba(255, 255, 255, 0.6);
-	--footer-widgets-link-hover-color: #fff;
+	--footer-widgets-link-hover-color: rgba(255, 255, 255, 0.8);
+	--footer-widgets-title-color: rgba(255, 255, 255, 0.1);
 	--footer-widgets-border-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -666,9 +668,6 @@
 	color: var(--footer-widgets-text-color);
 	background-color: #333;
 	background-color: var(--footer-widgets-background-color);
-	border-bottom: 1px solid;
-	border-color: rgba(255, 255, 255, 0.1);
-	border-color: var(--footer-widgets-border-color);
 }
 
 .footer-widgets-wrap {
@@ -684,11 +683,17 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 /* Footer Widget Styling */
 .footer-widgets .widget {
 	margin-bottom: 1.25rem;
+	padding: 1.5rem;
+	background-color: rgba(255, 255, 255, 0.05);
+	background-color: var(--footer-widgets-overlay-color);
 }
 
 .footer-widgets .widget .widget-title {
+	margin: -0.5rem -0.5rem 1rem;
 	color: #fff;
 	color: var(--footer-widgets-text-color);
+	background-color: rgba(255, 255, 255, 0.1);
+	background-color: var(--footer-widgets-title-color);
 }
 
 .footer-widgets .widget a:link,
@@ -699,7 +704,7 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 
 .footer-widgets .widget a:hover,
 .footer-widgets .widget a:active {
-	color: #fff;
+	color: rgba(255, 255, 255, 0.8);
 	color: var(--footer-widgets-link-hover-color);
 }
 
@@ -713,7 +718,7 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 	border: 1px solid;
 	border-color: rgba(255, 255, 255, 0.1);
 	border-color: var(--footer-widgets-border-color);
-	color: #fff;
+	color: rgba(255, 255, 255, 0.8);
 	color: var(--footer-widgets-link-hover-color);
 }
 
@@ -731,7 +736,7 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 .footer-widgets .widget input[type="button"],
 .footer-widgets .widget input[type="reset"],
 .footer-widgets .widget input[type="submit"] {
-	color: #fff;
+	color: rgba(255, 255, 255, 0.8);
 	color: var(--footer-widgets-link-hover-color);
 }
 
@@ -756,7 +761,7 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 .footer-widgets .widget .tzwb-posts-list .tzwb-entry-meta a:link,
 .footer-widgets .widget .tzwb-posts-list .tzwb-entry-meta a:visited,
 .footer-widgets .widget .tzwb-comments-list .tzwb-comment-date {
-	color: #fff;
+	color: rgba(255, 255, 255, 0.8);
 	color: var(--footer-widgets-link-hover-color);
 }
 
@@ -794,7 +799,7 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 	}
 
 	.footer-widget-column .widget:last-child {
-		flex-grow: 1;
+		flex-grow: 0;
 	}
 
 	/* Three Column Footer Widgets */
@@ -802,24 +807,6 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 	.footer-widget-column:nth-child(2):nth-last-child(2),
 	.footer-widget-column:nth-child(3):nth-last-child(1) {
 		width: 100%;
-	}
-}
-
-@media only screen and (min-width: 640px) {
-	.footer-widgets-background {
-		padding: 1.75rem 1.75rem 0;
-	}
-
-	.footer-widgets {
-		margin-right: -1.75rem;
-	}
-
-	.footer-widget-column {
-		padding-right: 1.75rem;
-	}
-
-	.footer-widgets .widget {
-		margin-bottom: 1.75rem;
 	}
 }
 
@@ -832,24 +819,6 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 	}
 }
 
-@media only screen and (min-width: 960px) {
-	.footer-widgets-background {
-		padding: 2rem 2rem 0;
-	}
-
-	.footer-widgets {
-		margin-right: -2rem;
-	}
-
-	.footer-widget-column {
-		padding-right: 2rem;
-	}
-
-	.footer-widgets .widget {
-		margin-bottom: 2rem;
-	}
-}
-
 @media only screen and (min-width: 1120px) {
 	/* Four Column Footer Widgets */
 	.footer-widget-column:nth-child(1):nth-last-child(4),
@@ -857,24 +826,6 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 	.footer-widget-column:nth-child(3):nth-last-child(2),
 	.footer-widget-column:nth-child(4):nth-last-child(1) {
 		width: 25%;
-	}
-}
-
-@media only screen and (min-width: 1280px) {
-	.footer-widgets-background {
-		padding: 2.5rem 2.5rem 0;
-	}
-
-	.footer-widgets {
-		margin-right: -2.5rem;
-	}
-
-	.footer-widget-column {
-		padding-right: 2.5rem;
-	}
-
-	.footer-widgets .widget {
-		margin-bottom: 2.5rem;
 	}
 }
 
