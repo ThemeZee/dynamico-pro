@@ -6,12 +6,9 @@
  * @package Dynamico Pro
  */
 
-#customize-control-dynamico_theme_options-scroll_top_title {
-	margin-top: 16px;
-}
-
 #customize-control-dynamico_theme_options-header_search_title,
 #customize-control-dynamico_theme_options-scroll_top_title {
+	margin-top: 16px;
 	margin-bottom: 0;
 }
 

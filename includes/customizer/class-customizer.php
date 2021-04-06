@@ -98,7 +98,7 @@ class Dynamico_Pro_Customizer {
 	 * @return void
 	 */
 	static function customize_preview_js() {
-		wp_enqueue_script( 'dynamico-pro-customize-preview', DYNAMICO_PRO_PLUGIN_URL . 'assets/js/customize-preview.min.js', array( 'customize-preview' ), '20210212', true );
+		wp_enqueue_script( 'dynamico-pro-customize-preview', DYNAMICO_PRO_PLUGIN_URL . 'assets/js/customize-preview.min.js', array( 'customize-preview' ), '20210404', true );
 	}
 
 	/**
@@ -107,7 +107,7 @@ class Dynamico_Pro_Customizer {
 	 * @return void
 	 */
 	static function customize_preview_css() {
-		wp_enqueue_style( 'dynamico-pro-customizer-css', DYNAMICO_PRO_PLUGIN_URL . 'assets/css/customizer.css', array(), '20210212' );
+		wp_enqueue_style( 'dynamico-pro-customizer-css', DYNAMICO_PRO_PLUGIN_URL . 'assets/css/customizer.css', array(), '20210403' );
 	}
 }
 

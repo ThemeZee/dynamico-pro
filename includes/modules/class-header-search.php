@@ -33,10 +33,7 @@ class Dynamico_Pro_Header_Search {
 		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_script' ) );
 
 		// Add search icon on main navigation menu.
-		add_action( 'dynamico_after_navigation', array( __CLASS__, 'add_header_search_icon' ) );
-
-		// Add search form on header area.
-		add_action( 'dynamico_after_header', array( __CLASS__, 'add_header_search_form' ) );
+		add_action( 'dynamico_header_search', array( __CLASS__, 'add_header_search' ) );
 
 		// Add Header Search checkbox in Customizer.
 		add_action( 'customize_register', array( __CLASS__, 'header_search_settings' ) );
@@ -58,17 +55,17 @@ class Dynamico_Pro_Header_Search {
 		// Embed header search JS if enabled.
 		if ( ( true === $theme_options['header_search'] || is_customize_preview() ) && ! self::is_amp() ) :
 
-			wp_enqueue_script( 'dynamico-pro-header-search', DYNAMICO_PRO_PLUGIN_URL . 'assets/js/header-search.min.js', array( 'jquery' ), '20210212', true );
+			wp_enqueue_script( 'dynamico-pro-header-search', DYNAMICO_PRO_PLUGIN_URL . 'assets/js/header-search.min.js', array( 'jquery' ), '20210406', true );
 
 		endif;
 	}
 
 	/**
-	 * Add search icon to navigation menu
+	 * Add search form to navigation menu
 	 *
 	 * @return void
 	 */
-	static function add_header_search_icon() {
+	static function add_header_search() {
 
 		// Get Theme Options from Database.
 		$theme_options = Dynamico_Pro_Customizer::get_theme_options();
@@ -76,39 +73,17 @@ class Dynamico_Pro_Header_Search {
 		// Show header search if activated.
 		if ( true === $theme_options['header_search'] || is_customize_preview() ) : ?>
 
-			<div class="header-search-button">
+			<div class="header-search">
 
 				<button class="header-search-icon" aria-controls="header-search" aria-expanded="false" <?php self::amp_search_toggle(); ?>>
 					<?php echo dynamico_get_svg( 'search' ); ?>
 					<span class="screen-reader-text"><?php esc_html_e( 'Search', 'dynamico-pro' ); ?></span>
 				</button>
 
-			</div>
-
-			<?php
-		endif;
-	}
-
-	/**
-	 * Add search form to header area
-	 *
-	 * @return void
-	 */
-	static function add_header_search_form() {
-
-		// Get Theme Options from Database.
-		$theme_options = Dynamico_Pro_Customizer::get_theme_options();
-
-		// Show header search if activated.
-		if ( true === $theme_options['header_search'] || is_customize_preview() ) :
-			?>
-
-			<div class="header-search-dropdown" <?php self::amp_search_is_toggled(); ?>>
-				<div class="header-search-main">
-					<div class="header-search-form">
-						<?php get_search_form(); ?>
-					</div>
+				<div class="header-search-form" <?php self::amp_search_is_toggled(); ?>>
+					<?php get_search_form(); ?>
 				</div>
+
 			</div>
 
 			<?php
@@ -128,7 +103,7 @@ class Dynamico_Pro_Header_Search {
 				'label'    => esc_html__( 'Header Search', 'dynamico-pro' ),
 				'section'  => 'dynamico_section_layout',
 				'settings' => array(),
-				'priority' => 30,
+				'priority' => 50,
 			)
 		) );
 
@@ -141,11 +116,11 @@ class Dynamico_Pro_Header_Search {
 		) );
 
 		$wp_customize->add_control( 'dynamico_theme_options[header_search]', array(
-			'label'    => esc_html__( 'Enable search field in header', 'dynamico-pro' ),
+			'label'    => esc_html__( 'Enable search field in main navigation', 'dynamico-pro' ),
 			'section'  => 'dynamico_section_layout',
 			'settings' => 'dynamico_theme_options[header_search]',
 			'type'     => 'checkbox',
-			'priority' => 40,
+			'priority' => 60,
 		) );
 	}
 
@@ -165,12 +140,7 @@ class Dynamico_Pro_Header_Search {
 			$classes[] = 'header-search-enabled';
 		}
 
-		// Add class if header search and main navigation menu is present.
-		if ( true === $theme_options['header_search'] && has_nav_menu( 'primary' ) ) {
-			$classes[] = 'header-search-and-main-navigation-active';
-		}
-
-		// Hide Author Bio in Customizer for instant live preview.
+		// Hide header search in Customizer for instant live preview.
 		if ( is_customize_preview() && false === $theme_options['header_search'] ) {
 			$classes[] = 'header-search-hidden';
 		}
@@ -200,7 +170,7 @@ class Dynamico_Pro_Header_Search {
 	 */
 	static function amp_search_is_toggled() {
 		if ( self::is_amp() ) {
-			echo "[class]=\"'header-search-dropdown' + ( headerSearchExpanded ? ' toggled-on' : '' )\"";
+			echo "[class]=\"'header-search-form' + ( headerSearchExpanded ? ' toggled-on' : '' )\"";
 		}
 	}
 }
