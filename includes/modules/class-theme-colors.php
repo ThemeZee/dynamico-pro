@@ -57,23 +57,43 @@ class Dynamico_Pro_Theme_Colors {
 		if ( $theme_options['header_bar_color'] !== $default_options['header_bar_color'] ) {
 			$color_variables .= '--header-bar-background-color: ' . $theme_options['header_bar_color'] . ';';
 
-			// Check if a dark background color was chosen.
+			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['header_bar_color'] ) ) {
 				$color_variables .= '--header-bar-text-color: #151515;';
-				$color_variables .= '--header-bar-text-hover-color: rgba(0, 0, 0, 0.5);';
-				$color_variables .= '--header-bar-border-color: rgba(0, 0, 0, 0.1);';
 			}
 		}
 
-		// Set Header Background Color.
-		if ( $theme_options['header_color'] !== $default_options['header_color'] ) {
-			$color_variables .= '--header-background-color: ' . $theme_options['header_color'] . ';';
+		// Set Header Bar Hover Color.
+		if ( $theme_options['header_bar_hover_color'] !== $default_options['header_bar_hover_color'] ) {
+			$color_variables .= '--header-bar-hover-color: ' . $theme_options['header_bar_hover_color'] . ';';
 
-			// Check if a dark background color was chosen.
-			if ( self::is_color_light( $theme_options['header_color'] ) ) {
-				$color_variables .= '--header-text-color: #151515;';
-				$color_variables .= '--header-text-hover-color: rgba(0, 0, 0, 0.5);';
-				$color_variables .= '--header-border-color: rgba(0, 0, 0, 0.1);';
+			// Check if a light background color was chosen.
+			if ( self::is_color_light( $theme_options['header_bar_hover_color'] ) ) {
+				$color_variables .= '--header-bar-hover-text-color: #151515;';
+			}
+		}
+
+		// Set Navigation Background Color.
+		if ( $theme_options['navi_color'] !== $default_options['navi_color'] ) {
+			$color_variables .= '--navi-background-color: ' . $theme_options['navi_color'] . ';';
+			$color_variables .= '--featured-background-color: ' . $theme_options['navi_color'] . ';';
+
+			// Check if a light background color was chosen.
+			if ( self::is_color_light( $theme_options['navi_color'] ) ) {
+				$color_variables .= '--navi-text-color: #151515;';
+				$color_variables .= '--featured-text-color: #151515;';
+				$color_variables .= '--featured-hover-color: rgba(0, 0, 0, 0.6);';
+			}
+		}
+
+		// Set Navigation Hover Color.
+		if ( $theme_options['navi_hover_color'] !== $default_options['navi_hover_color'] ) {
+			$color_variables .= '--navi-hover-color: ' . $theme_options['navi_hover_color'] . ';';
+			$color_variables .= '--featured-border-color: ' . $theme_options['navi_hover_color'] . ';';
+
+			// Check if a light background color was chosen.
+			if ( self::is_color_light( $theme_options['navi_hover_color'] ) ) {
+				$color_variables .= '--navi-hover-text-color: #151515;';
 			}
 		}
 
@@ -183,19 +203,51 @@ class Dynamico_Pro_Theme_Colors {
 			)
 		) );
 
-		// Add Header Color setting.
-		$wp_customize->add_setting( 'dynamico_theme_options[header_color]', array(
-			'default'           => $default_options['header_color'],
+		// Add Header Bar Hover Color setting.
+		$wp_customize->add_setting( 'dynamico_theme_options[header_bar_hover_color]', array(
+			'default'           => $default_options['header_bar_hover_color'],
 			'type'              => 'option',
 			'transport'         => 'postMessage',
 			'sanitize_callback' => 'sanitize_hex_color',
 		) );
 		$wp_customize->add_control( new WP_Customize_Color_Control(
-			$wp_customize, 'dynamico_theme_options[header_color]', array(
-				'label'    => esc_html_x( 'Header', 'Color Option', 'dynamico-pro' ),
+			$wp_customize, 'dynamico_theme_options[header_bar_hover_color]', array(
+				'label'    => esc_html_x( 'Top Navigation Hover', 'Color Option', 'dynamico-pro' ),
 				'section'  => 'dynamico_pro_section_theme_colors',
-				'settings' => 'dynamico_theme_options[header_color]',
+				'settings' => 'dynamico_theme_options[header_bar_hover_color]',
 				'priority' => 20,
+			)
+		) );
+
+		// Add Navigation Color setting.
+		$wp_customize->add_setting( 'dynamico_theme_options[navi_color]', array(
+			'default'           => $default_options['navi_color'],
+			'type'              => 'option',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'sanitize_hex_color',
+		) );
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+			$wp_customize, 'dynamico_theme_options[navi_color]', array(
+				'label'    => esc_html_x( 'Navigation', 'Color Option', 'dynamico-pro' ),
+				'section'  => 'dynamico_pro_section_theme_colors',
+				'settings' => 'dynamico_theme_options[navi_color]',
+				'priority' => 30,
+			)
+		) );
+
+		// Add Navigation Hover Color setting.
+		$wp_customize->add_setting( 'dynamico_theme_options[navi_hover_color]', array(
+			'default'           => $default_options['navi_hover_color'],
+			'type'              => 'option',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'sanitize_hex_color',
+		) );
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+			$wp_customize, 'dynamico_theme_options[navi_hover_color]', array(
+				'label'    => esc_html_x( 'Navigation Hover', 'Color Option', 'dynamico-pro' ),
+				'section'  => 'dynamico_pro_section_theme_colors',
+				'settings' => 'dynamico_theme_options[navi_hover_color]',
+				'priority' => 40,
 			)
 		) );
 
@@ -211,7 +263,7 @@ class Dynamico_Pro_Theme_Colors {
 				'label'    => esc_html_x( 'Links', 'Color Option', 'dynamico-pro' ),
 				'section'  => 'dynamico_pro_section_theme_colors',
 				'settings' => 'dynamico_theme_options[link_color]',
-				'priority' => 40,
+				'priority' => 45,
 			)
 		) );
 
