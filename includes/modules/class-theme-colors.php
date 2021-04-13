@@ -100,61 +100,65 @@ class Dynamico_Pro_Theme_Colors {
 		// Set Link Color.
 		if ( $theme_options['link_color'] !== $default_options['link_color'] ) {
 			$color_variables .= '--link-color: ' . $theme_options['link_color'] . ';';
-		}
-
-		// Set Link Hover Color.
-		if ( $theme_options['link_hover_color'] !== $default_options['link_hover_color'] ) {
-			$color_variables .= '--link-hover-color: ' . $theme_options['link_hover_color'] . ';';
+			$color_variables .= '--link-hover-color: ' . $theme_options['link_color'] . ';';
 		}
 
 		// Set Button Color.
 		if ( $theme_options['button_color'] !== $default_options['button_color'] ) {
 			$color_variables .= '--button-color: ' . $theme_options['button_color'] . ';';
+
+			// Check if a light background color was chosen.
+			if ( self::is_color_light( $theme_options['button_color'] ) ) {
+				$color_variables .= '--button-text-color: #151515;';
+			}
 		}
 
 		// Set Button Hover Color.
 		if ( $theme_options['button_hover_color'] !== $default_options['button_hover_color'] ) {
 			$color_variables .= '--button-hover-color: ' . $theme_options['button_hover_color'] . ';';
+
+			// Check if a light background color was chosen.
+			if ( self::is_color_light( $theme_options['button_hover_color'] ) ) {
+				$color_variables .= '--button-hover-text-color: #151515;';
+			}
 		}
 
 		// Set Title Color.
 		if ( $theme_options['title_color'] !== $default_options['title_color'] ) {
 			$color_variables .= '--title-color: ' . $theme_options['title_color'] . ';';
-			$color_variables .= '--widget-title-color: ' . $theme_options['title_color'] . ';';
+			$color_variables .= '--site-title-hover-color: ' . $theme_options['title_color'] . ';';
 		}
 
 		// Set Title Hover Color.
 		if ( $theme_options['title_hover_color'] !== $default_options['title_hover_color'] ) {
 			$color_variables .= '--title-hover-color: ' . $theme_options['title_hover_color'] . ';';
-			$color_variables .= '--widget-title-hover-color: ' . $theme_options['title_hover_color'] . ';';
+			$color_variables .= '--site-title-color: ' . $theme_options['title_hover_color'] . ';';
 		}
 
-		// Set Sidebar & Comments Color.
-		if ( $theme_options['sidebar_comments_color'] !== $default_options['sidebar_comments_color'] ) {
-			$color_variables .= '--widget-background-color: ' . $theme_options['sidebar_comments_color'] . ';';
-			$color_variables .= '--post-meta-background-color: ' . $theme_options['sidebar_comments_color'] . ';';
-			$color_variables .= '--comments-background-color: ' . $theme_options['sidebar_comments_color'] . ';';
-		}
-
-		// Set Footer Widgets Color.
-		if ( $theme_options['footer_widgets_color'] !== $default_options['footer_widgets_color'] ) {
-			$color_variables .= '--footer-widgets-background-color: ' . $theme_options['footer_widgets_color'] . ';';
+		// Set Widget Title Color.
+		if ( $theme_options['widget_title_color'] !== $default_options['widget_title_color'] ) {
+			$color_variables .= '--widget-title-background-color: ' . $theme_options['widget_title_color'] . ';';
 
 			// Check if a light background color was chosen.
-			if ( self::is_color_light( $theme_options['footer_widgets_color'] ) ) {
-				$color_variables .= '--footer-widgets-text-color: #151515;';
-				$color_variables .= '--footer-widgets-link-color: rgba(0, 0, 0, 0.6);';
-				$color_variables .= '--footer-widgets-link-hover-color: #151515;';
-				$color_variables .= '--footer-widgets-border-color: rgba(0, 0, 0, 0.1);';
+			if ( self::is_color_light( $theme_options['widget_title_color'] ) ) {
+				$color_variables .= '--widget-title-text-color: #151515;';
 			}
 		}
 
-		// Set Footer Copyright Color.
+		// Set Footer Color.
 		if ( $theme_options['footer_color'] !== $default_options['footer_color'] ) {
+			$color_variables .= '--footer-widgets-background-color: ' . $theme_options['footer_color'] . ';';
 			$color_variables .= '--footer-background-color: ' . $theme_options['footer_color'] . ';';
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['footer_color'] ) ) {
+				$color_variables .= '--footer-widgets-overlay-color: rgba(0, 0, 0, 0.05);';
+				$color_variables .= '--footer-widgets-text-color: #151515;';
+				$color_variables .= '--footer-widgets-link-color: rgba(0, 0, 0, 0.6);';
+				$color_variables .= '--footer-widgets-link-hover-color: rgba(0, 0, 0, 0.8);';
+				$color_variables .= '--footer-widgets-border-color: rgba(0, 0, 0, 0.1);';
+				$color_variables .= '--footer-widgets-title-color: rgba(0, 0, 0, 0.1);';
+				$color_variables .= '--footer-overlay-color: rgba(0, 0, 0, 0.05);';
 				$color_variables .= '--footer-text-color: rgba(0, 0, 0, 0.6);';
 				$color_variables .= '--footer-link-color: #151515;';
 				$color_variables .= '--footer-link-hover-color: rgba(0, 0, 0, 0.6);';
@@ -263,22 +267,6 @@ class Dynamico_Pro_Theme_Colors {
 				'label'    => esc_html_x( 'Links', 'Color Option', 'dynamico-pro' ),
 				'section'  => 'dynamico_pro_section_theme_colors',
 				'settings' => 'dynamico_theme_options[link_color]',
-				'priority' => 45,
-			)
-		) );
-
-		// Add Link Hover Color setting.
-		$wp_customize->add_setting( 'dynamico_theme_options[link_hover_color]', array(
-			'default'           => $default_options['link_hover_color'],
-			'type'              => 'option',
-			'transport'         => 'postMessage',
-			'sanitize_callback' => 'sanitize_hex_color',
-		) );
-		$wp_customize->add_control( new WP_Customize_Color_Control(
-			$wp_customize, 'dynamico_theme_options[link_hover_color]', array(
-				'label'    => esc_html_x( 'Link Hover', 'Color Option', 'dynamico-pro' ),
-				'section'  => 'dynamico_pro_section_theme_colors',
-				'settings' => 'dynamico_theme_options[link_hover_color]',
 				'priority' => 50,
 			)
 		) );
@@ -347,39 +335,23 @@ class Dynamico_Pro_Theme_Colors {
 			)
 		) );
 
-		// Add Sidebar & Comments Color setting.
-		$wp_customize->add_setting( 'dynamico_theme_options[sidebar_comments_color]', array(
-			'default'           => $default_options['sidebar_comments_color'],
+		// Add Widget Titles Color setting.
+		$wp_customize->add_setting( 'dynamico_theme_options[widget_title_color]', array(
+			'default'           => $default_options['widget_title_color'],
 			'type'              => 'option',
 			'transport'         => 'postMessage',
 			'sanitize_callback' => 'sanitize_hex_color',
 		) );
 		$wp_customize->add_control( new WP_Customize_Color_Control(
-			$wp_customize, 'dynamico_theme_options[sidebar_comments_color]', array(
-				'label'    => esc_html_x( 'Sidebar & Comments', 'Color Option', 'dynamico-pro' ),
+			$wp_customize, 'dynamico_theme_options[widget_title_color]', array(
+				'label'    => esc_html_x( 'Widget Titles', 'Color Option', 'dynamico-pro' ),
 				'section'  => 'dynamico_pro_section_theme_colors',
-				'settings' => 'dynamico_theme_options[sidebar_comments_color]',
+				'settings' => 'dynamico_theme_options[widget_title_color]',
 				'priority' => 100,
 			)
 		) );
 
-		// Add Footer Widgets Color setting.
-		$wp_customize->add_setting( 'dynamico_theme_options[footer_widgets_color]', array(
-			'default'           => $default_options['footer_widgets_color'],
-			'type'              => 'option',
-			'transport'         => 'postMessage',
-			'sanitize_callback' => 'sanitize_hex_color',
-		) );
-		$wp_customize->add_control( new WP_Customize_Color_Control(
-			$wp_customize, 'dynamico_theme_options[footer_widgets_color]', array(
-				'label'    => esc_html_x( 'Footer Widgets', 'Color Option', 'dynamico-pro' ),
-				'section'  => 'dynamico_pro_section_theme_colors',
-				'settings' => 'dynamico_theme_options[footer_widgets_color]',
-				'priority' => 110,
-			)
-		) );
-
-		// Add Footer Copyright Color setting.
+		// Add Footer Color setting.
 		$wp_customize->add_setting( 'dynamico_theme_options[footer_color]', array(
 			'default'           => $default_options['footer_color'],
 			'type'              => 'option',
@@ -388,10 +360,10 @@ class Dynamico_Pro_Theme_Colors {
 		) );
 		$wp_customize->add_control( new WP_Customize_Color_Control(
 			$wp_customize, 'dynamico_theme_options[footer_color]', array(
-				'label'    => esc_html_x( 'Footer Copyright', 'Color Option', 'dynamico-pro' ),
+				'label'    => esc_html_x( 'Footer', 'Color Option', 'dynamico-pro' ),
 				'section'  => 'dynamico_pro_section_theme_colors',
 				'settings' => 'dynamico_theme_options[footer_color]',
-				'priority' => 120,
+				'priority' => 110,
 			)
 		) );
 	}
