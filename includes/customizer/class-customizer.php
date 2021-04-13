@@ -98,7 +98,7 @@ class Dynamico_Pro_Customizer {
 	 * @return void
 	 */
 	static function customize_preview_js() {
-		wp_enqueue_script( 'dynamico-pro-customize-preview', DYNAMICO_PRO_PLUGIN_URL . 'assets/js/customize-preview.js', array( 'customize-preview' ), '20210405', true );
+		wp_enqueue_script( 'dynamico-pro-customize-preview', DYNAMICO_PRO_PLUGIN_URL . 'assets/js/customize-preview.js', array( 'customize-preview' ), '20210407', true );
 	}
 
 	/**
