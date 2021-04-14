@@ -80,16 +80,16 @@ class Dynamico_Pro_Customizer {
 			'title_hover_color'         => '#e84747',
 			'widget_title_color'        => '#333333',
 			'footer_color'              => '#333333',
-			'text_font'                 => 'Barlow',
-			'title_font'                => 'Barlow',
-			'title_is_bold'             => true,
+			'text_font'                 => 'Ubuntu',
+			'title_font'                => 'Francois One',
+			'title_is_bold'             => false,
 			'title_is_uppercase'        => false,
-			'navi_font'                 => 'Barlow',
+			'navi_font'                 => 'Francois One',
 			'navi_is_bold'              => false,
-			'navi_is_uppercase'         => false,
-			'widget_title_font'         => 'Barlow',
-			'widget_title_is_bold'      => true,
-			'widget_title_is_uppercase' => false,
+			'navi_is_uppercase'         => true,
+			'widget_title_font'         => 'Ubuntu',
+			'widget_title_is_bold'      => false,
+			'widget_title_is_uppercase' => true,
 		);
 	}
 
@@ -99,7 +99,7 @@ class Dynamico_Pro_Customizer {
 	 * @return void
 	 */
 	static function customize_preview_js() {
-		wp_enqueue_script( 'dynamico-pro-customize-preview', DYNAMICO_PRO_PLUGIN_URL . 'assets/js/customize-preview.js', array( 'customize-preview' ), '20210408', true );
+		wp_enqueue_script( 'dynamico-pro-customize-preview', DYNAMICO_PRO_PLUGIN_URL . 'assets/js/customize-preview.min.js', array( 'customize-preview' ), '20210410', true );
 	}
 
 	/**
