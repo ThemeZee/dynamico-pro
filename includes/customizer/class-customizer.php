@@ -60,14 +60,15 @@ class Dynamico_Pro_Customizer {
 			'header_search'             => false,
 			'author_bio'                => false,
 			'scroll_to_top'             => false,
-			'primary_color'             => '#2a4861',
-			'secondary_color'           => '#5d7b94',
-			'tertiary_color'            => '#90aec7',
-			'accent_color'              => '#60945d',
-			'highlight_color'           => '#915d94',
-			'light_gray_color'          => '#ededef',
-			'gray_color'                => '#84848f',
-			'dark_gray_color'           => '#24242f',
+			'primary_color'             => '#e84747',
+			'secondary_color'           => '#cb3e3e',
+			'tertiary_color'            => '#ae3535',
+			'contrast_color'            => '#4747e8',
+			'accent_color'              => '#47e897',
+			'highlight_color'           => '#e8e847',
+			'light_gray_color'          => '#eeeeee',
+			'gray_color'                => '#777777',
+			'dark_gray_color'           => '#333333',
 			'header_bar_color'          => '#e84747',
 			'header_bar_hover_color'    => '#333333',
 			'navi_color'                => '#333333',
@@ -98,7 +99,7 @@ class Dynamico_Pro_Customizer {
 	 * @return void
 	 */
 	static function customize_preview_js() {
-		wp_enqueue_script( 'dynamico-pro-customize-preview', DYNAMICO_PRO_PLUGIN_URL . 'assets/js/customize-preview.js', array( 'customize-preview' ), '20210407', true );
+		wp_enqueue_script( 'dynamico-pro-customize-preview', DYNAMICO_PRO_PLUGIN_URL . 'assets/js/customize-preview.js', array( 'customize-preview' ), '20210408', true );
 	}
 
 	/**

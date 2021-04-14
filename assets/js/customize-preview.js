@@ -53,6 +53,13 @@
 		} );
 	} );
 
+	/* Contrast Color Option */
+	wp.customize( 'dynamico_theme_options[contrast_color]', function( value ) {
+		value.bind( function( newval ) {
+			document.documentElement.style.setProperty( '--contrast-color', newval );
+		} );
+	} );
+
 	/* Accent Color Option */
 	wp.customize( 'dynamico_theme_options[accent_color]', function( value ) {
 		value.bind( function( newval ) {
