@@ -12,17 +12,17 @@
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
-	--header-bar-background-color: #e84747;
-	--header-bar-text-color: #fff;
-	--header-bar-hover-color: #333;
-	--header-bar-hover-text-color: #fff;
-	--footer-widgets-background-color: #333;
-	--footer-widgets-overlay-color: rgba(255, 255, 255, 0.05);
-	--footer-widgets-text-color: #fff;
-	--footer-widgets-link-color: rgba(255, 255, 255, 0.6);
-	--footer-widgets-link-hover-color: rgba(255, 255, 255, 0.8);
-	--footer-widgets-title-color: rgba(255, 255, 255, 0.1);
-	--footer-widgets-border-color: rgba(255, 255, 255, 0.1);
+	--dynamico--header-bar-background-color: #e84747;
+	--dynamico--header-bar-text-color: #fff;
+	--dynamico--header-bar-hover-color: #333;
+	--dynamico--header-bar-hover-text-color: #fff;
+	--dynamico--footer-widgets-background-color: #333;
+	--dynamico--footer-widgets-overlay-color: rgba(255, 255, 255, 0.05);
+	--dynamico--footer-widgets-text-color: #fff;
+	--dynamico--footer-widgets-link-color: rgba(255, 255, 255, 0.6);
+	--dynamico--footer-widgets-link-hover-color: rgba(255, 255, 255, 0.8);
+	--dynamico--footer-widgets-title-color: rgba(255, 255, 255, 0.1);
+	--dynamico--footer-widgets-border-color: rgba(255, 255, 255, 0.1);
 }
 
 /*--------------------------------------------------------------
@@ -30,7 +30,7 @@
 --------------------------------------------------------------*/
 .header-bar-wrap {
 	background-color: #e84747;
-	background-color: var(--header-bar-background-color);
+	background-color: var(--dynamico--header-bar-background-color);
 }
 
 .header-bar {
@@ -54,7 +54,7 @@
 	margin: 0;
 	padding: 0;
 	color: #fff;
-	color: var(--header-bar-text-color);
+	color: var(--dynamico--header-bar-text-color);
 	list-style: none;
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -89,7 +89,7 @@
 .top-navigation ul a:link,
 .top-navigation ul a:visited {
 	color: #fff;
-	color: var(--header-bar-text-color);
+	color: var(--dynamico--header-bar-text-color);
 	text-decoration: none;
 	transition: all 0.15s ease;
 }
@@ -98,9 +98,9 @@
 .top-navigation ul a:active,
 .top-navigation ul a:focus {
 	color: #fff;
-	color: var(--header-bar-hover-text-color);
+	color: var(--dynamico--header-bar-hover-text-color);
 	background-color: #333;
-	background-color: var(--header-bar-hover-color);
+	background-color: var(--dynamico--header-bar-hover-color);
 }
 
 .top-navigation ul li.current-menu-item > a {
@@ -110,7 +110,7 @@
 /* Submenus */
 .top-navigation ul ul {
 	background-color: #e84747;
-	background-color: var(--header-bar-background-color);
+	background-color: var(--dynamico--header-bar-background-color);
 }
 
 .is-amp-page .top-navigation ul button.toggled-on + ul,
@@ -139,7 +139,7 @@
 	border: none;
 	background: none;
 	color: #fff;
-	color: var(--header-bar-text-color);
+	color: var(--dynamico--header-bar-text-color);
 	text-decoration: none;
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -154,16 +154,16 @@
 .secondary-menu-toggle:focus {
 	outline: thin dotted;
 	color: #fff;
-	color: var(--header-bar-text-color);
+	color: var(--dynamico--header-bar-text-color);
 	background: none;
 }
 
 .secondary-menu-toggle:hover,
 .secondary-menu-toggle:active {
 	color: #fff;
-	color: var(--header-bar-hover-text-color);
+	color: var(--dynamico--header-bar-hover-text-color);
 	background-color: #333;
-	background-color: var(--header-bar-hover-color);
+	background-color: var(--dynamico--header-bar-hover-color);
 	cursor: pointer;
 }
 
@@ -200,7 +200,7 @@
 .top-navigation .dropdown-toggle:focus {
 	outline: thin dotted;
 	color: #fff;
-	color: var(--header-bar-text-color);
+	color: var(--dynamico--header-bar-text-color);
 	background: none;
 }
 
@@ -350,9 +350,9 @@
 	display: inline-block;
 	padding: 1.15rem 1.25rem;
 	color: #fff;
-	color: var(--navi-text-color);
+	color: var(--dynamico--navi-text-color);
 	background-color: #333;
-	background-color: var(--navi-background-color);
+	background-color: var(--dynamico--navi-background-color);
 	z-index: 99;
 	font-size: 16px;
 	font-size: 1rem;
@@ -361,9 +361,9 @@
 .header-search .header-search-icon:hover, .header-search .header-search-icon:active {
 	cursor: pointer;
 	color: #fff;
-	color: var(--navi-hover-text-color);
+	color: var(--dynamico--navi-hover-text-color);
 	background-color: #e84747;
-	background-color: var(--navi-hover-color);
+	background-color: var(--dynamico--navi-hover-color);
 }
 
 .header-search .header-search-icon:focus {
@@ -388,7 +388,7 @@
 	margin: 0;
 	padding: 1.25rem;
 	background-color: #fff;
-	background-color: var(--submenu-background-color);
+	background-color: var(--dynamico--submenu-background-color);
 	border-top: none;
 	box-shadow: 0 0 2px #444;
 	z-index: 999;
@@ -430,16 +430,16 @@
 	display: flex;
 	align-items: center;
 	color: #fff;
-	color: var(--header-bar-text-color);
+	color: var(--dynamico--header-bar-text-color);
 	padding: 0.67rem 0.8rem;
 }
 
 .header-bar-social-menu-wrap .social-icons-menu li a:hover,
 .header-bar-social-menu-wrap .social-icons-menu li a:active {
 	color: #fff;
-	color: var(--header-bar-hover-text-color);
+	color: var(--dynamico--header-bar-hover-text-color);
 	background-color: #333;
-	background-color: var(--header-bar-hover-color);
+	background-color: var(--dynamico--header-bar-hover-color);
 }
 
 /* Footer Social Icons */
@@ -451,13 +451,13 @@
 	display: flex;
 	padding: 0.6rem;
 	color: #fff;
-	color: var(--footer-link-color);
+	color: var(--dynamico--footer-link-color);
 }
 
 .footer-social-menu-wrap .social-icons-menu li a:hover,
 .footer-social-menu-wrap .social-icons-menu li a:active {
 	color: rgba(255, 255, 255, 0.6);
-	color: var(--footer-link-hover-color);
+	color: var(--dynamico--footer-link-hover-color);
 }
 
 .footer-social-menu-wrap .social-icons-menu li a .icon {
@@ -479,8 +479,8 @@
 .entry-author {
 	margin: 1.25rem 0 0;
 	padding: 1rem;
-	background-color: #ededef;
-	background-color: var(--post-meta-background-color);
+	background-color: #eeeeee;
+	background-color: var(--dynamico--post-meta-background-color);
 	text-align: center;
 }
 
@@ -549,9 +549,9 @@
 	display: flex;
 	padding: 1.25rem 1.25rem 0;
 	color: #fff;
-	color: var(--footer-widgets-text-color);
+	color: var(--dynamico--footer-widgets-text-color);
 	background-color: #333;
-	background-color: var(--footer-widgets-background-color);
+	background-color: var(--dynamico--footer-widgets-background-color);
 }
 
 .footer-widgets-wrap {
@@ -569,38 +569,38 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 	margin-bottom: 1.25rem;
 	padding: 1.5rem;
 	background-color: rgba(255, 255, 255, 0.05);
-	background-color: var(--footer-widgets-overlay-color);
+	background-color: var(--dynamico--footer-widgets-overlay-color);
 }
 
 .footer-widgets .widget .widget-title {
 	margin: -0.5rem -0.5rem 1rem;
 	padding: 0.5rem 0.75rem;
 	color: #fff;
-	color: var(--footer-widgets-text-color);
+	color: var(--dynamico--footer-widgets-text-color);
 	background-color: rgba(255, 255, 255, 0.1);
-	background-color: var(--footer-widgets-title-color);
+	background-color: var(--dynamico--footer-widgets-title-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Ubuntu", arial, helvetica, sans-serif;
-	font-family: var(--widget-title-font);
+	font-family: var(--dynamico--widget-title-font);
 	font-weight: normal;
-	font-weight: var(--widget-title-font-weight);
+	font-weight: var(--dynamico--widget-title-font-weight);
 	text-transform: uppercase;
-	text-transform: var(--widget-title-text-transform);
+	text-transform: var(--dynamico--widget-title-text-transform);
 	line-height: 1.4;
-	line-height: var(--title-line-height);
+	line-height: var(--dynamico--title-line-height);
 }
 
 .footer-widgets .widget a:link,
 .footer-widgets .widget a:visited {
 	color: rgba(255, 255, 255, 0.6);
-	color: var(--footer-widgets-link-color);
+	color: var(--dynamico--footer-widgets-link-color);
 }
 
 .footer-widgets .widget a:hover,
 .footer-widgets .widget a:active {
 	color: rgba(255, 255, 255, 0.8);
-	color: var(--footer-widgets-link-hover-color);
+	color: var(--dynamico--footer-widgets-link-hover-color);
 }
 
 .footer-widgets .widget input[type="text"],
@@ -612,9 +612,9 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 .footer-widgets .widget textarea {
 	border: 1px solid;
 	border-color: rgba(255, 255, 255, 0.1);
-	border-color: var(--footer-widgets-border-color);
+	border-color: var(--dynamico--footer-widgets-border-color);
 	color: rgba(255, 255, 255, 0.8);
-	color: var(--footer-widgets-link-hover-color);
+	color: var(--dynamico--footer-widgets-link-hover-color);
 }
 
 .footer-widgets .widget input[type="text"]:focus,
@@ -624,7 +624,7 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 .footer-widgets .widget input[type="search"]:focus,
 .footer-widgets .widget textarea:focus {
 	color: #fff;
-	color: var(--footer-widgets-text-color);
+	color: var(--dynamico--footer-widgets-text-color);
 }
 
 .footer-widgets .widget button,
@@ -632,7 +632,7 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 .footer-widgets .widget input[type="reset"],
 .footer-widgets .widget input[type="submit"] {
 	color: rgba(255, 255, 255, 0.8);
-	color: var(--footer-widgets-link-hover-color);
+	color: var(--dynamico--footer-widgets-link-hover-color);
 }
 
 .footer-widgets .widget button:hover,
@@ -648,7 +648,7 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 .footer-widgets .widget input[type="reset"]:active,
 .footer-widgets .widget input[type="submit"]:active {
 	color: rgba(255, 255, 255, 0.1);
-	color: var(--footer-widgets-border-color);
+	color: var(--dynamico--footer-widgets-border-color);
 }
 
 .footer-widgets .widget .tzwb-posts-list .tzwb-entry-meta,
@@ -657,13 +657,13 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 .footer-widgets .widget .tzwb-posts-list .tzwb-entry-meta a:visited,
 .footer-widgets .widget .tzwb-comments-list .tzwb-comment-date {
 	color: rgba(255, 255, 255, 0.8);
-	color: var(--footer-widgets-link-hover-color);
+	color: var(--dynamico--footer-widgets-link-hover-color);
 }
 
 .footer-widgets .widget .tzwb-posts-list .tzwb-entry-meta a:hover,
 .footer-widgets .widget .tzwb-posts-list .tzwb-entry-meta a:active {
 	color: #fff;
-	color: var(--footer-widgets-text-color);
+	color: var(--dynamico--footer-widgets-text-color);
 }
 
 @media only screen and (min-width: 480px) {
@@ -812,12 +812,12 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 
 .scroll-to-top-button:focus {
 	background-color: #e84747;
-	background-color: var(--button-color);
+	background-color: var(--dynamico--button-color);
 }
 
 .scroll-to-top-button:focus:hover {
 	background-color: #333;
-	background-color: var(--button-hover-color);
+	background-color: var(--dynamico--button-hover-color);
 }
 
 .scroll-to-top-button .icon {
@@ -826,13 +826,13 @@ body.wide-theme-layout .site .footer-widgets-wrap {
 	height: 22px;
 	vertical-align: top;
 	fill: #fff;
-	fill: var(--button-text-color);
+	fill: var(--dynamico--button-text-color);
 }
 
 .scroll-to-top-button:hover .icon,
 .scroll-to-top-button:active .icon {
 	fill: #fff;
-	fill: var(--button-hover-text-color);
+	fill: var(--dynamico--button-hover-text-color);
 }
 
 /*--------------------------------------------------------------

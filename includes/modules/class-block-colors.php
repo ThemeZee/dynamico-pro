@@ -79,47 +79,47 @@ class Dynamico_Pro_Block_Colors {
 
 		// Set Primary Color.
 		if ( $theme_options['primary_color'] !== $default_options['primary_color'] ) {
-			$color_variables .= '--primary-color: ' . $theme_options['primary_color'] . ';';
+			$color_variables .= '--dynamico--primary-color: ' . $theme_options['primary_color'] . ';';
 		}
 
 		// Set Secondary Color.
 		if ( $theme_options['secondary_color'] !== $default_options['secondary_color'] ) {
-			$color_variables .= '--secondary-color: ' . $theme_options['secondary_color'] . ';';
+			$color_variables .= '--dynamico--secondary-color: ' . $theme_options['secondary_color'] . ';';
 		}
 
 		// Set Tertiary Color.
 		if ( $theme_options['tertiary_color'] !== $default_options['tertiary_color'] ) {
-			$color_variables .= '--tertiary-color: ' . $theme_options['tertiary_color'] . ';';
+			$color_variables .= '--dynamico--tertiary-color: ' . $theme_options['tertiary_color'] . ';';
 		}
 
 		// Set Contrast Color.
 		if ( $theme_options['contrast_color'] !== $default_options['contrast_color'] ) {
-			$color_variables .= '--contrast-color: ' . $theme_options['contrast_color'] . ';';
+			$color_variables .= '--dynamico--contrast-color: ' . $theme_options['contrast_color'] . ';';
 		}
 
 		// Set Accent Color.
 		if ( $theme_options['accent_color'] !== $default_options['accent_color'] ) {
-			$color_variables .= '--accent-color: ' . $theme_options['accent_color'] . ';';
+			$color_variables .= '--dynamico--accent-color: ' . $theme_options['accent_color'] . ';';
 		}
 
 		// Set Highlight Color.
 		if ( $theme_options['highlight_color'] !== $default_options['highlight_color'] ) {
-			$color_variables .= '--highlight-color: ' . $theme_options['highlight_color'] . ';';
+			$color_variables .= '--dynamico--highlight-color: ' . $theme_options['highlight_color'] . ';';
 		}
 
 		// Set Light Gray Color.
 		if ( $theme_options['light_gray_color'] !== $default_options['light_gray_color'] ) {
-			$color_variables .= '--light-gray-color: ' . $theme_options['light_gray_color'] . ';';
+			$color_variables .= '--dynamico--light-gray-color: ' . $theme_options['light_gray_color'] . ';';
 		}
 
 		// Set Gray Color.
 		if ( $theme_options['gray_color'] !== $default_options['gray_color'] ) {
-			$color_variables .= '--gray-color: ' . $theme_options['gray_color'] . ';';
+			$color_variables .= '--dynamico--gray-color: ' . $theme_options['gray_color'] . ';';
 		}
 
 		// Set Dark Gray Color.
 		if ( $theme_options['dark_gray_color'] !== $default_options['dark_gray_color'] ) {
-			$color_variables .= '--dark-gray-color: ' . $theme_options['dark_gray_color'] . ';';
+			$color_variables .= '--dynamico--dark-gray-color: ' . $theme_options['dark_gray_color'] . ';';
 		}
 
 		// Set Color Variables.

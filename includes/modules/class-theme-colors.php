@@ -55,114 +55,114 @@ class Dynamico_Pro_Theme_Colors {
 
 		// Set Header Bar Background Color.
 		if ( $theme_options['header_bar_color'] !== $default_options['header_bar_color'] ) {
-			$color_variables .= '--header-bar-background-color: ' . $theme_options['header_bar_color'] . ';';
+			$color_variables .= '--dynamico--header-bar-background-color: ' . $theme_options['header_bar_color'] . ';';
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['header_bar_color'] ) ) {
-				$color_variables .= '--header-bar-text-color: #151515;';
+				$color_variables .= '--dynamico--header-bar-text-color: #151515;';
 			}
 		}
 
 		// Set Header Bar Hover Color.
 		if ( $theme_options['header_bar_hover_color'] !== $default_options['header_bar_hover_color'] ) {
-			$color_variables .= '--header-bar-hover-color: ' . $theme_options['header_bar_hover_color'] . ';';
+			$color_variables .= '--dynamico--header-bar-hover-color: ' . $theme_options['header_bar_hover_color'] . ';';
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['header_bar_hover_color'] ) ) {
-				$color_variables .= '--header-bar-hover-text-color: #151515;';
+				$color_variables .= '--dynamico--header-bar-hover-text-color: #151515;';
 			}
 		}
 
 		// Set Navigation Background Color.
 		if ( $theme_options['navi_color'] !== $default_options['navi_color'] ) {
-			$color_variables .= '--navi-background-color: ' . $theme_options['navi_color'] . ';';
-			$color_variables .= '--featured-background-color: ' . $theme_options['navi_color'] . ';';
+			$color_variables .= '--dynamico--navi-background-color: ' . $theme_options['navi_color'] . ';';
+			$color_variables .= '--dynamico--featured-background-color: ' . $theme_options['navi_color'] . ';';
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['navi_color'] ) ) {
-				$color_variables .= '--navi-text-color: #151515;';
-				$color_variables .= '--featured-text-color: #151515;';
-				$color_variables .= '--featured-hover-color: rgba(0, 0, 0, 0.6);';
+				$color_variables .= '--dynamico--navi-text-color: #151515;';
+				$color_variables .= '--dynamico--featured-text-color: #151515;';
+				$color_variables .= '--dynamico--featured-hover-color: rgba(0, 0, 0, 0.6);';
 			}
 		}
 
 		// Set Navigation Hover Color.
 		if ( $theme_options['navi_hover_color'] !== $default_options['navi_hover_color'] ) {
-			$color_variables .= '--navi-hover-color: ' . $theme_options['navi_hover_color'] . ';';
-			$color_variables .= '--featured-border-color: ' . $theme_options['navi_hover_color'] . ';';
+			$color_variables .= '--dynamico--navi-hover-color: ' . $theme_options['navi_hover_color'] . ';';
+			$color_variables .= '--dynamico--featured-border-color: ' . $theme_options['navi_hover_color'] . ';';
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['navi_hover_color'] ) ) {
-				$color_variables .= '--navi-hover-text-color: #151515;';
+				$color_variables .= '--dynamico--navi-hover-text-color: #151515;';
 			}
 		}
 
 		// Set Link Color.
 		if ( $theme_options['link_color'] !== $default_options['link_color'] ) {
-			$color_variables .= '--link-color: ' . $theme_options['link_color'] . ';';
-			$color_variables .= '--link-hover-color: ' . $theme_options['link_color'] . ';';
+			$color_variables .= '--dynamico--link-color: ' . $theme_options['link_color'] . ';';
+			$color_variables .= '--dynamico--link-hover-color: ' . $theme_options['link_color'] . ';';
 		}
 
 		// Set Button Color.
 		if ( $theme_options['button_color'] !== $default_options['button_color'] ) {
-			$color_variables .= '--button-color: ' . $theme_options['button_color'] . ';';
+			$color_variables .= '--dynamico--button-color: ' . $theme_options['button_color'] . ';';
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['button_color'] ) ) {
-				$color_variables .= '--button-text-color: #151515;';
+				$color_variables .= '--dynamico--button-text-color: #151515;';
 			}
 		}
 
 		// Set Button Hover Color.
 		if ( $theme_options['button_hover_color'] !== $default_options['button_hover_color'] ) {
-			$color_variables .= '--button-hover-color: ' . $theme_options['button_hover_color'] . ';';
+			$color_variables .= '--dynamico--button-hover-color: ' . $theme_options['button_hover_color'] . ';';
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['button_hover_color'] ) ) {
-				$color_variables .= '--button-hover-text-color: #151515;';
+				$color_variables .= '--dynamico--button-hover-text-color: #151515;';
 			}
 		}
 
 		// Set Title Color.
 		if ( $theme_options['title_color'] !== $default_options['title_color'] ) {
-			$color_variables .= '--title-color: ' . $theme_options['title_color'] . ';';
-			$color_variables .= '--site-title-hover-color: ' . $theme_options['title_color'] . ';';
+			$color_variables .= '--dynamico--title-color: ' . $theme_options['title_color'] . ';';
+			$color_variables .= '--dynamico--site-title-hover-color: ' . $theme_options['title_color'] . ';';
 		}
 
 		// Set Title Hover Color.
 		if ( $theme_options['title_hover_color'] !== $default_options['title_hover_color'] ) {
-			$color_variables .= '--title-hover-color: ' . $theme_options['title_hover_color'] . ';';
-			$color_variables .= '--site-title-color: ' . $theme_options['title_hover_color'] . ';';
+			$color_variables .= '--dynamico--title-hover-color: ' . $theme_options['title_hover_color'] . ';';
+			$color_variables .= '--dynamico--site-title-color: ' . $theme_options['title_hover_color'] . ';';
 		}
 
 		// Set Widget Title Color.
 		if ( $theme_options['widget_title_color'] !== $default_options['widget_title_color'] ) {
-			$color_variables .= '--widget-title-background-color: ' . $theme_options['widget_title_color'] . ';';
+			$color_variables .= '--dynamico--widget-title-background-color: ' . $theme_options['widget_title_color'] . ';';
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['widget_title_color'] ) ) {
-				$color_variables .= '--widget-title-text-color: #151515;';
+				$color_variables .= '--dynamico--widget-title-text-color: #151515;';
 			}
 		}
 
 		// Set Footer Color.
 		if ( $theme_options['footer_color'] !== $default_options['footer_color'] ) {
-			$color_variables .= '--footer-widgets-background-color: ' . $theme_options['footer_color'] . ';';
-			$color_variables .= '--footer-background-color: ' . $theme_options['footer_color'] . ';';
+			$color_variables .= '--dynamico--footer-widgets-background-color: ' . $theme_options['footer_color'] . ';';
+			$color_variables .= '--dynamico--footer-background-color: ' . $theme_options['footer_color'] . ';';
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['footer_color'] ) ) {
-				$color_variables .= '--footer-widgets-overlay-color: rgba(0, 0, 0, 0.05);';
-				$color_variables .= '--footer-widgets-text-color: #151515;';
-				$color_variables .= '--footer-widgets-link-color: rgba(0, 0, 0, 0.6);';
-				$color_variables .= '--footer-widgets-link-hover-color: rgba(0, 0, 0, 0.8);';
-				$color_variables .= '--footer-widgets-border-color: rgba(0, 0, 0, 0.1);';
-				$color_variables .= '--footer-widgets-title-color: rgba(0, 0, 0, 0.1);';
-				$color_variables .= '--footer-overlay-color: rgba(0, 0, 0, 0.05);';
-				$color_variables .= '--footer-text-color: rgba(0, 0, 0, 0.6);';
-				$color_variables .= '--footer-link-color: #151515;';
-				$color_variables .= '--footer-link-hover-color: rgba(0, 0, 0, 0.6);';
-				$color_variables .= '--footer-border-color: rgba(0, 0, 0, 0.1);';
+				$color_variables .= '--dynamico--footer-widgets-overlay-color: rgba(0, 0, 0, 0.05);';
+				$color_variables .= '--dynamico--footer-widgets-text-color: #151515;';
+				$color_variables .= '--dynamico--footer-widgets-link-color: rgba(0, 0, 0, 0.6);';
+				$color_variables .= '--dynamico--footer-widgets-link-hover-color: rgba(0, 0, 0, 0.8);';
+				$color_variables .= '--dynamico--footer-widgets-border-color: rgba(0, 0, 0, 0.1);';
+				$color_variables .= '--dynamico--footer-widgets-title-color: rgba(0, 0, 0, 0.1);';
+				$color_variables .= '--dynamico--footer-overlay-color: rgba(0, 0, 0, 0.05);';
+				$color_variables .= '--dynamico--footer-text-color: rgba(0, 0, 0, 0.6);';
+				$color_variables .= '--dynamico--footer-link-color: #151515;';
+				$color_variables .= '--dynamico--footer-link-hover-color: rgba(0, 0, 0, 0.6);';
+				$color_variables .= '--dynamico--footer-border-color: rgba(0, 0, 0, 0.1);';
 			}
 		}
 

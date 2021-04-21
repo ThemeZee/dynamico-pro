@@ -76,52 +76,52 @@ class Dynamico_Pro_Custom_Fonts {
 
 		// Set Text Font.
 		if ( $theme_options['text_font'] !== $default_options['text_font'] ) {
-			$font_variables .= '--text-font: ' . self::get_font_family( $theme_options['text_font'] );
+			$font_variables .= '--dynamico--text-font: ' . self::get_font_family( $theme_options['text_font'] );
 		}
 
 		// Set Title Font.
 		if ( $theme_options['title_font'] !== $default_options['title_font'] ) {
-			$font_variables .= '--title-font: ' . self::get_font_family( $theme_options['title_font'] );
+			$font_variables .= '--dynamico--title-font: ' . self::get_font_family( $theme_options['title_font'] );
 		}
 
 		// Set Title Font Weight.
 		if ( $theme_options['title_is_bold'] !== $default_options['title_is_bold'] ) {
-			$font_variables .= '--title-font-weight: ' . ( $theme_options['title_is_bold'] ? 'bold' : 'normal' ) . '; ';
+			$font_variables .= '--dynamico--title-font-weight: ' . ( $theme_options['title_is_bold'] ? 'bold' : 'normal' ) . '; ';
 		}
 
 		// Set Title Text Transform.
 		if ( $theme_options['title_is_uppercase'] !== $default_options['title_is_uppercase'] ) {
-			$font_variables .= '--title-text-transform: ' . ( $theme_options['title_is_uppercase'] ? 'uppercase' : 'none' ) . '; ';
+			$font_variables .= '--dynamico--title-text-transform: ' . ( $theme_options['title_is_uppercase'] ? 'uppercase' : 'none' ) . '; ';
 		}
 
 		// Set Navi Font.
 		if ( $theme_options['navi_font'] !== $default_options['navi_font'] ) {
-			$font_variables .= '--navi-font: ' . self::get_font_family( $theme_options['navi_font'] );
+			$font_variables .= '--dynamico--navi-font: ' . self::get_font_family( $theme_options['navi_font'] );
 		}
 
 		// Set Navi Font Weight.
 		if ( $theme_options['navi_is_bold'] !== $default_options['navi_is_bold'] ) {
-			$font_variables .= '--navi-font-weight: ' . ( $theme_options['navi_is_bold'] ? 'bold' : 'normal' ) . '; ';
+			$font_variables .= '--dynamico--navi-font-weight: ' . ( $theme_options['navi_is_bold'] ? 'bold' : 'normal' ) . '; ';
 		}
 
 		// Set Navi Text Transform.
 		if ( $theme_options['navi_is_uppercase'] !== $default_options['navi_is_uppercase'] ) {
-			$font_variables .= '--navi-text-transform: ' . ( $theme_options['navi_is_uppercase'] ? 'uppercase' : 'none' ) . '; ';
+			$font_variables .= '--dynamico--navi-text-transform: ' . ( $theme_options['navi_is_uppercase'] ? 'uppercase' : 'none' ) . '; ';
 		}
 
 		// Set Widget Title Font.
 		if ( $theme_options['widget_title_font'] !== $default_options['widget_title_font'] ) {
-			$font_variables .= '--widget-title-font: ' . self::get_font_family( $theme_options['widget_title_font'] );
+			$font_variables .= '--dynamico--widget-title-font: ' . self::get_font_family( $theme_options['widget_title_font'] );
 		}
 
 		// Set Widget Title Font Weight.
 		if ( $theme_options['widget_title_is_bold'] !== $default_options['widget_title_is_bold'] ) {
-			$font_variables .= '--widget-title-font-weight: ' . ( $theme_options['widget_title_is_bold'] ? 'bold' : 'normal' ) . '; ';
+			$font_variables .= '--dynamico--widget-title-font-weight: ' . ( $theme_options['widget_title_is_bold'] ? 'bold' : 'normal' ) . '; ';
 		}
 
 		// Set Widget Title Text Transform.
 		if ( $theme_options['widget_title_is_uppercase'] !== $default_options['widget_title_is_uppercase'] ) {
-			$font_variables .= '--widget-title-text-transform: ' . ( $theme_options['widget_title_is_uppercase'] ? 'uppercase' : 'none' ) . '; ';
+			$font_variables .= '--dynamico--widget-title-text-transform: ' . ( $theme_options['widget_title_is_uppercase'] ? 'uppercase' : 'none' ) . '; ';
 		}
 
 		// Add Font Variables.

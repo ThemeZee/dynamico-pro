@@ -35,63 +35,63 @@
 	/* Primary Color Option */
 	wp.customize( 'dynamico_theme_options[primary_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--primary-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--primary-color', newval );
 		} );
 	} );
 
 	/* Secondary Color Option */
 	wp.customize( 'dynamico_theme_options[secondary_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--secondary-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--secondary-color', newval );
 		} );
 	} );
 
 	/* Tertiary Color Option */
 	wp.customize( 'dynamico_theme_options[tertiary_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--tertiary-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--tertiary-color', newval );
 		} );
 	} );
 
 	/* Contrast Color Option */
 	wp.customize( 'dynamico_theme_options[contrast_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--contrast-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--contrast-color', newval );
 		} );
 	} );
 
 	/* Accent Color Option */
 	wp.customize( 'dynamico_theme_options[accent_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--accent-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--accent-color', newval );
 		} );
 	} );
 
 	/* Highlight Color Option */
 	wp.customize( 'dynamico_theme_options[highlight_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--highlight-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--highlight-color', newval );
 		} );
 	} );
 
 	/* Light Gray Color Option */
 	wp.customize( 'dynamico_theme_options[light_gray_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--light-gray-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--light-gray-color', newval );
 		} );
 	} );
 
 	/* Gray Color Option */
 	wp.customize( 'dynamico_theme_options[gray_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--gray-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--gray-color', newval );
 		} );
 	} );
 
 	/* Dark Gray Color Option */
 	wp.customize( 'dynamico_theme_options[dark_gray_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--dark-gray-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--dark-gray-color', newval );
 		} );
 	} );
 
@@ -106,8 +106,8 @@
 				text_color = '#fff';
 			}
 
-			document.documentElement.style.setProperty( '--header-bar-background-color', newval );
-			document.documentElement.style.setProperty( '--header-bar-text-color', text_color );
+			document.documentElement.style.setProperty( '--dynamico--header-bar-background-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--header-bar-text-color', text_color );
 		} );
 	} );
 
@@ -122,8 +122,8 @@
 				text_color = '#fff';
 			}
 
-			document.documentElement.style.setProperty( '--header-bar-hover-color', newval );
-			document.documentElement.style.setProperty( '--header-bar-hover-text-color', text_color );
+			document.documentElement.style.setProperty( '--dynamico--header-bar-hover-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--header-bar-hover-text-color', text_color );
 		} );
 	} );
 
@@ -140,11 +140,11 @@
 				hover_color = 'rgba(255, 255, 255, 0.6)';
 			}
 
-			document.documentElement.style.setProperty( '--navi-background-color', newval );
-			document.documentElement.style.setProperty( '--featured-background-color', newval );
-			document.documentElement.style.setProperty( '--navi-text-color', text_color );
-			document.documentElement.style.setProperty( '--featured-text-color', text_color );
-			document.documentElement.style.setProperty( '--featured-hover-color', hover_color );
+			document.documentElement.style.setProperty( '--dynamico--navi-background-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--featured-background-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--navi-text-color', text_color );
+			document.documentElement.style.setProperty( '--dynamico--featured-text-color', text_color );
+			document.documentElement.style.setProperty( '--dynamico--featured-hover-color', hover_color );
 		} );
 	} );
 
@@ -159,17 +159,17 @@
 				text_color = '#fff';
 			}
 
-			document.documentElement.style.setProperty( '--navi-hover-color', newval );
-			document.documentElement.style.setProperty( '--featured-border-color', newval );
-			document.documentElement.style.setProperty( '--navi-hover-text-color', text_color );
+			document.documentElement.style.setProperty( '--dynamico--navi-hover-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--featured-border-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--navi-hover-text-color', text_color );
 		} );
 	} );
 
 	/* Link Color Option */
 	wp.customize( 'dynamico_theme_options[link_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--link-color', newval );
-			document.documentElement.style.setProperty( '--link-hover-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--link-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--link-hover-color', newval );
 		} );
 	} );
 
@@ -184,8 +184,8 @@
 				text_color = '#fff';
 			}
 
-			document.documentElement.style.setProperty( '--button-color', newval );
-			document.documentElement.style.setProperty( '--button-text-color', text_color );
+			document.documentElement.style.setProperty( '--dynamico--button-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--button-text-color', text_color );
 		} );
 	} );
 
@@ -200,24 +200,24 @@
 				text_color = '#fff';
 			}
 
-			document.documentElement.style.setProperty( '--button-hover-color', newval );
-			document.documentElement.style.setProperty( '--button-hover-text-color', text_color );
+			document.documentElement.style.setProperty( '--dynamico--button-hover-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--button-hover-text-color', text_color );
 		} );
 	} );
 
 	/* Title Color Option */
 	wp.customize( 'dynamico_theme_options[title_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--title-color', newval );
-			document.documentElement.style.setProperty( '--site-title-hover-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--title-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--site-title-hover-color', newval );
 		} );
 	} );
 
 	/* Title Hover Color Option */
 	wp.customize( 'dynamico_theme_options[title_hover_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--title-hover-color', newval );
-			document.documentElement.style.setProperty( '--site-title-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--title-hover-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--site-title-color', newval );
 		} );
 	} );
 
@@ -232,8 +232,8 @@
 				text_color = '#fff';
 			}
 
-			document.documentElement.style.setProperty( '--widget-title-background-color', newval );
-			document.documentElement.style.setProperty( '--widget-title-text-color', text_color );
+			document.documentElement.style.setProperty( '--dynamico--widget-title-background-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--widget-title-text-color', text_color );
 		} );
 	} );
 
@@ -256,19 +256,19 @@
 				border_color = 'rgba(255, 255, 255, 0.1)';
 			}
 
-			document.documentElement.style.setProperty( '--footer-widgets-background-color', newval );
-			document.documentElement.style.setProperty( '--footer-background-color', newval );
-			document.documentElement.style.setProperty( '--footer-widgets-overlay-color', overlay_color );
-			document.documentElement.style.setProperty( '--footer-widgets-text-color', text_color );
-			document.documentElement.style.setProperty( '--footer-widgets-link-color', link_color );
-			document.documentElement.style.setProperty( '--footer-widgets-link-hover-color', link_hover_color );
-			document.documentElement.style.setProperty( '--footer-widgets-border-color', border_color );
-			document.documentElement.style.setProperty( '--footer-widgets-title-color', border_color );
-			document.documentElement.style.setProperty( '--footer-overlay-color', overlay_color );
-			document.documentElement.style.setProperty( '--footer-text-color', link_color );
-			document.documentElement.style.setProperty( '--footer-link-color', text_color );
-			document.documentElement.style.setProperty( '--footer-link-hover-color', link_color );
-			document.documentElement.style.setProperty( '--footer-border-color', border_color );
+			document.documentElement.style.setProperty( '--dynamico--footer-widgets-background-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--footer-background-color', newval );
+			document.documentElement.style.setProperty( '--dynamico--footer-widgets-overlay-color', overlay_color );
+			document.documentElement.style.setProperty( '--dynamico--footer-widgets-text-color', text_color );
+			document.documentElement.style.setProperty( '--dynamico--footer-widgets-link-color', link_color );
+			document.documentElement.style.setProperty( '--dynamico--footer-widgets-link-hover-color', link_hover_color );
+			document.documentElement.style.setProperty( '--dynamico--footer-widgets-border-color', border_color );
+			document.documentElement.style.setProperty( '--dynamico--footer-widgets-title-color', border_color );
+			document.documentElement.style.setProperty( '--dynamico--footer-overlay-color', overlay_color );
+			document.documentElement.style.setProperty( '--dynamico--footer-text-color', link_color );
+			document.documentElement.style.setProperty( '--dynamico--footer-link-color', text_color );
+			document.documentElement.style.setProperty( '--dynamico--footer-link-hover-color', link_color );
+			document.documentElement.style.setProperty( '--dynamico--footer-border-color', border_color );
 		} );
 	} );
 
@@ -284,7 +284,7 @@
 			var newFont = newval === 'SystemFontStack' ? systemFont : newval;
 
 			// Set CSS.
-			document.documentElement.style.setProperty( '--text-font', newFont );
+			document.documentElement.style.setProperty( '--dynamico--text-font', newFont );
 		} );
 	} );
 
@@ -300,7 +300,7 @@
 			var newFont = newval === 'SystemFontStack' ? systemFont : newval;
 
 			// Set CSS.
-			document.documentElement.style.setProperty( '--title-font', newFont );
+			document.documentElement.style.setProperty( '--dynamico--title-font', newFont );
 		} );
 	} );
 
@@ -308,7 +308,7 @@
 	wp.customize( 'dynamico_theme_options[title_is_bold]', function( value ) {
 		value.bind( function( newval ) {
 			var fontWeight = newval ? 'bold' : 'normal';
-			document.documentElement.style.setProperty( '--title-font-weight', fontWeight );
+			document.documentElement.style.setProperty( '--dynamico--title-font-weight', fontWeight );
 		} );
 	} );
 
@@ -316,7 +316,7 @@
 	wp.customize( 'dynamico_theme_options[title_is_uppercase]', function( value ) {
 		value.bind( function( newval ) {
 			var textTransform = newval ? 'uppercase' : 'none';
-			document.documentElement.style.setProperty( '--title-text-transform', textTransform );
+			document.documentElement.style.setProperty( '--dynamico--title-text-transform', textTransform );
 		} );
 	} );
 
@@ -332,7 +332,7 @@
 			var newFont = newval === 'SystemFontStack' ? systemFont : newval;
 
 			// Set CSS.
-			document.documentElement.style.setProperty( '--navi-font', newFont );
+			document.documentElement.style.setProperty( '--dynamico--navi-font', newFont );
 		} );
 	} );
 
@@ -340,7 +340,7 @@
 	wp.customize( 'dynamico_theme_options[navi_is_bold]', function( value ) {
 		value.bind( function( newval ) {
 			var fontWeight = newval ? 'bold' : 'normal';
-			document.documentElement.style.setProperty( '--navi-font-weight', fontWeight );
+			document.documentElement.style.setProperty( '--dynamico--navi-font-weight', fontWeight );
 		} );
 	} );
 
@@ -348,7 +348,7 @@
 	wp.customize( 'dynamico_theme_options[navi_is_uppercase]', function( value ) {
 		value.bind( function( newval ) {
 			var textTransform = newval ? 'uppercase' : 'none';
-			document.documentElement.style.setProperty( '--navi-text-transform', textTransform );
+			document.documentElement.style.setProperty( '--dynamico--navi-text-transform', textTransform );
 		} );
 	} );
 
@@ -364,7 +364,7 @@
 			var newFont = newval === 'SystemFontStack' ? systemFont : newval;
 
 			// Set CSS.
-			document.documentElement.style.setProperty( '--widget-title-font', newFont );
+			document.documentElement.style.setProperty( '--dynamico--widget-title-font', newFont );
 		} );
 	} );
 
@@ -372,7 +372,7 @@
 	wp.customize( 'dynamico_theme_options[widget_title_is_bold]', function( value ) {
 		value.bind( function( newval ) {
 			var fontWeight = newval ? 'bold' : 'normal';
-			document.documentElement.style.setProperty( '--widget-title-font-weight', fontWeight );
+			document.documentElement.style.setProperty( '--dynamico--widget-title-font-weight', fontWeight );
 		} );
 	} );
 
@@ -380,7 +380,7 @@
 	wp.customize( 'dynamico_theme_options[widget_title_is_uppercase]', function( value ) {
 		value.bind( function( newval ) {
 			var textTransform = newval ? 'uppercase' : 'none';
-			document.documentElement.style.setProperty( '--widget-title-text-transform', textTransform );
+			document.documentElement.style.setProperty( '--dynamico--widget-title-text-transform', textTransform );
 		} );
 	} );
 
