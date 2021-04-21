@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dynamico Pro\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2021-04-06 11:24+0200\n"
-"PO-Revision-Date: 2021-04-06 11:24+0200\n"
+"POT-Creation-Date: 2021-04-21 17:19+0200\n"
+"PO-Revision-Date: 2021-04-21 17:21+0200\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
 "Language: de_DE\n"
@@ -168,46 +168,51 @@ msgstr "Alle Beiträge ansehen"
 msgid "Display author bio"
 msgstr "Autor Bio anzeigen"
 
-#: includes/modules/class-block-colors.php:136
+#: includes/modules/class-block-colors.php:142
 msgid "Block Colors"
 msgstr "Block Farben"
 
-#: includes/modules/class-block-colors.php:153
+#: includes/modules/class-block-colors.php:159
 msgctxt "Color Option"
 msgid "Primary"
 msgstr "Primär"
 
-#: includes/modules/class-block-colors.php:169
+#: includes/modules/class-block-colors.php:175
 msgctxt "Color Option"
 msgid "Secondary"
 msgstr "Sekundär"
 
-#: includes/modules/class-block-colors.php:185
+#: includes/modules/class-block-colors.php:191
 msgctxt "Color Option"
 msgid "Tertiary"
 msgstr "Tertiär"
 
-#: includes/modules/class-block-colors.php:201
+#: includes/modules/class-block-colors.php:207
+msgctxt "Color Option"
+msgid "Contrast"
+msgstr "Kontrast"
+
+#: includes/modules/class-block-colors.php:223
 msgctxt "Color Option"
 msgid "Accent"
 msgstr "Akzent"
 
-#: includes/modules/class-block-colors.php:217
+#: includes/modules/class-block-colors.php:239
 msgctxt "Color Option"
 msgid "Highlight"
 msgstr "Highlight"
 
-#: includes/modules/class-block-colors.php:233
+#: includes/modules/class-block-colors.php:255
 msgctxt "Color Option"
 msgid "Light Gray"
 msgstr "Hellgrau"
 
-#: includes/modules/class-block-colors.php:249
+#: includes/modules/class-block-colors.php:271
 msgctxt "Color Option"
 msgid "Gray"
 msgstr "Grau"
 
-#: includes/modules/class-block-colors.php:265
+#: includes/modules/class-block-colors.php:287
 msgctxt "Color Option"
 msgid "Dark Gray"
 msgstr "Dunkelgrau"
@@ -301,17 +306,17 @@ msgstr "Sekundäres Menü"
 msgid "Top Navigation"
 msgstr "Obere Navigation"
 
-#: includes/modules/class-header-search.php:83
+#: includes/modules/class-header-search.php:80
 msgid "Search"
 msgstr "Suche"
 
-#: includes/modules/class-header-search.php:128
+#: includes/modules/class-header-search.php:103
 msgid "Header Search"
 msgstr "Header Suche"
 
-#: includes/modules/class-header-search.php:144
-msgid "Enable search field in header"
-msgstr "Suchfeld im Header aktivieren"
+#: includes/modules/class-header-search.php:119
+msgid "Enable search field in main navigation"
+msgstr "Suchfeld in Hauptnavigation anzeigen"
 
 #: includes/modules/class-scroll-to-top.php:70
 msgid "Scroll to Top"
@@ -321,72 +326,72 @@ msgstr "Nach oben scrollen"
 msgid "Display Scroll to Top Button"
 msgstr "Button zum Nach oben Scrollen anzeigen"
 
-#: includes/modules/class-social-icons.php:175
-msgid "Social Icons (Header)"
-msgstr "Social Icons (Header)"
+#: includes/modules/class-social-icons.php:49
+msgid "Social Icons (Top Navigation)"
+msgstr "Social Icons (Obere Navigation)"
 
-#: includes/modules/class-social-icons.php:176
+#: includes/modules/class-social-icons.php:50
 msgid "Social Icons (Footer)"
 msgstr "Social Icons (Footer)"
 
-#: includes/modules/class-theme-colors.php:162
+#: includes/modules/class-theme-colors.php:186
 msgid "Theme Colors"
 msgstr "Theme Farben"
 
-#: includes/modules/class-theme-colors.php:179
+#: includes/modules/class-theme-colors.php:203
 msgctxt "Color Option"
 msgid "Top Navigation"
 msgstr "Obere Navigation"
 
-#: includes/modules/class-theme-colors.php:195
+#: includes/modules/class-theme-colors.php:219
 msgctxt "Color Option"
-msgid "Header"
-msgstr "Header"
+msgid "Top Navigation Hover"
+msgstr "Obere Navigation Hover"
 
-#: includes/modules/class-theme-colors.php:211
+#: includes/modules/class-theme-colors.php:235
+msgctxt "Color Option"
+msgid "Navigation"
+msgstr "Navigation"
+
+#: includes/modules/class-theme-colors.php:251
+msgctxt "Color Option"
+msgid "Navigation Hover"
+msgstr "Navigation-Hover"
+
+#: includes/modules/class-theme-colors.php:267
 msgctxt "Color Option"
 msgid "Links"
 msgstr "Links"
 
-#: includes/modules/class-theme-colors.php:227
-msgctxt "Color Option"
-msgid "Link Hover"
-msgstr "Link-Hover"
-
-#: includes/modules/class-theme-colors.php:243
+#: includes/modules/class-theme-colors.php:283
 msgctxt "Color Option"
 msgid "Buttons"
 msgstr "Buttons"
 
-#: includes/modules/class-theme-colors.php:259
+#: includes/modules/class-theme-colors.php:299
 msgctxt "Color Option"
 msgid "Button Hover"
 msgstr "Button-Hover"
 
-#: includes/modules/class-theme-colors.php:275
+#: includes/modules/class-theme-colors.php:315
 msgctxt "Color Option"
 msgid "Titles"
 msgstr "Titel"
 
-#: includes/modules/class-theme-colors.php:291
+#: includes/modules/class-theme-colors.php:331
 msgctxt "Color Option"
 msgid "Title Hover"
 msgstr "Titel-Hover"
 
-#: includes/modules/class-theme-colors.php:307
+#: includes/modules/class-theme-colors.php:347
 msgctxt "Color Option"
-msgid "Sidebar & Comments"
-msgstr "Sidebar & Kommentare"
+msgid "Widget Titles"
+msgstr "Widget-Titel"
 
-#: includes/modules/class-theme-colors.php:323
+#: includes/modules/class-theme-colors.php:363
 msgctxt "Color Option"
-msgid "Footer Widgets"
-msgstr "Footer Widgets"
-
-#: includes/modules/class-theme-colors.php:339
-msgctxt "Color Option"
-msgid "Footer Copyright"
-msgstr "Footer Copyright"
+msgid "Footer"
+msgstr "Footer"
 
 #: includes/modules/class-widget-areas.php:112
 msgid "Before Header"
@@ -442,6 +447,29 @@ msgctxt "widget area description"
 msgid "Appears above the footer area."
 msgstr "Erscheint über dem Footer-Bereich."
 
+#~ msgid "Social Icons (Header)"
+#~ msgstr "Social Icons (Header)"
+
+#~ msgctxt "Color Option"
+#~ msgid "Header"
+#~ msgstr "Header"
+
+#~ msgctxt "Color Option"
+#~ msgid "Link Hover"
+#~ msgstr "Link-Hover"
+
+#~ msgctxt "Color Option"
+#~ msgid "Sidebar & Comments"
+#~ msgstr "Sidebar & Kommentare"
+
+#~ msgctxt "Color Option"
+#~ msgid "Footer Widgets"
+#~ msgstr "Footer Widgets"
+
+#~ msgctxt "Color Option"
+#~ msgid "Footer Copyright"
+#~ msgstr "Footer Copyright"
+
 #~ msgid "Local Fonts (GDPR)"
 #~ msgstr "Lokale Schriftarten (DSGVO)"
 
@@ -472,7 +500,3 @@ msgstr "Erscheint über dem Footer-Bereich."
 #~ msgctxt "Color Option"
 #~ msgid "Header Background"
 #~ msgstr "Header Hintergrund"
-
-#~ msgctxt "Color Option"
-#~ msgid "Navigation"
-#~ msgstr "Navigation"
