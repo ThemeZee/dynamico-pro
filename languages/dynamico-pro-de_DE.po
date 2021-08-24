@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dynamico Pro\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2021-04-21 17:19+0200\n"
-"PO-Revision-Date: 2021-04-21 17:21+0200\n"
+"POT-Creation-Date: 2021-08-24 11:57+0200\n"
+"PO-Revision-Date: 2021-08-24 11:58+0200\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
 "Language: de_DE\n"
@@ -412,8 +412,8 @@ msgid "Appears below the header area."
 msgstr "Erscheint unter dem Header-Bereich."
 
 #: includes/modules/class-widget-areas.php:134
-msgid "Before Blog Posts"
-msgstr "Vor Blog-Beiträgen"
+msgid "Before Latest Blog Posts"
+msgstr "Vor den letzten Blog-Beiträgen"
 
 #: includes/modules/class-widget-areas.php:136
 msgctxt "widget area description"
@@ -421,7 +421,7 @@ msgid "Appears on the blog page above the latest posts."
 msgstr "Erscheint auf der Blog-Seite über den neuesten Beiträgen."
 
 #: includes/modules/class-widget-areas.php:145
-msgid "After Posts"
+msgid "After Single Posts"
 msgstr "Nach einzelnen Beiträgen"
 
 #: includes/modules/class-widget-areas.php:147
@@ -430,8 +430,8 @@ msgid "Appears below single posts."
 msgstr "Erscheint unter einzelnen Beiträgen."
 
 #: includes/modules/class-widget-areas.php:156
-msgid "After Pages"
-msgstr "Nach Seiten"
+msgid "After Static Pages"
+msgstr "Nach statischen Seiten"
 
 #: includes/modules/class-widget-areas.php:158
 msgctxt "widget area description"
