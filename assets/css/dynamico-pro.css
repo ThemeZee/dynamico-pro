@@ -474,6 +474,50 @@
 }
 
 /*--------------------------------------------------------------
+# Widget Areas
+--------------------------------------------------------------*/
+.before-header-widget-area,
+.after-header-widget-area,
+.before-footer-widget-area {
+	padding: 1px 1.25rem;
+	background-color: #fff;
+	background-color: var(--dynamico--page-background-color);
+}
+
+.before-header-widget-area .widget:first-child,
+.after-header-widget-area .widget:first-child,
+.before-footer-widget-area .widget:first-child {
+	margin-top: 1.25rem;
+}
+
+.before-header-widget-area,
+.after-header-widget-area {
+	border-bottom: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--dynamico--content-border-color);
+}
+
+.before-footer-widget-area {
+	border-top: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--dynamico--content-border-color);
+}
+
+@media only screen and (min-width: 480px) {
+	.before-header-widget-area,
+	.after-header-widget-area,
+	.before-footer-widget-area {
+		padding: 1px 1.5rem;
+	}
+
+	.before-header-widget-area .widget:first-child,
+	.after-header-widget-area .widget:first-child,
+	.before-footer-widget-area .widget:first-child {
+		margin-top: 1.5rem;
+	}
+}
+
+/*--------------------------------------------------------------
 # Author Bio
 --------------------------------------------------------------*/
 .entry-author {
