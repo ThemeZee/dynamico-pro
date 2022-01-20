@@ -7,9 +7,14 @@
 ( function() {
 
 	document.addEventListener( 'DOMContentLoaded', function() {
+		var headerSearch = document.querySelector( '#main-navigation-wrap .header-search' );
+
+		// Return early if header search is missing.
+		if ( headerSearch === null ) {
+			return;
+		}
 
 		// Find header search elements.
-		var headerSearch = document.querySelector( '#main-navigation-wrap .header-search' );
 		var searchIcon   = headerSearch.querySelector( '.header-search-icon' );
 		var searchForm   = headerSearch.querySelector( '.header-search-form' );
 
