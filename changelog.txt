@@ -2,6 +2,10 @@
 Dynamico Pro Changelog
 ===================================
 
+= 1.0.3 - 2022-01-24 =
+* updated Header Search script to use vanilla js
+* updated Scroll to Top button script to use vanilla js
+
 = 1.0.2 - 2021-08-24 =
 * added styling for widget areas
 
