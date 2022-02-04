@@ -358,7 +358,7 @@
 	font-size: 1rem;
 }
 
-.header-search .header-search-icon:hover, .header-search .header-search-icon:active {
+.header-search .header-search-icon:hover, .header-search .header-search-icon:active, .header-search .header-search-icon:focus {
 	cursor: pointer;
 	color: #fff;
 	color: var(--dynamico--navi-hover-text-color);
@@ -367,7 +367,7 @@
 }
 
 .header-search .header-search-icon:focus {
-	outline: none;
+	outline: thin dotted;
 }
 
 .header-search .header-search-icon .icon-search {

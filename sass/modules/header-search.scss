@@ -10,14 +10,15 @@
 		@include font-size(16);
 
 		&:hover,
-		&:active {
+		&:active,
+		&:focus {
 			cursor: pointer;
 			@include color(--navi-hover-text-color);
 			@include background(--navi-hover-color);
 		}
 
 		&:focus {
-			outline: none;
+			outline: thin dotted;
 		}
 
 		.icon-search {
