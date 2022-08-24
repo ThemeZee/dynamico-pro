@@ -52,6 +52,7 @@
 		var scrollButton = document.createElement( 'button' );
 		scrollButton.setAttribute( 'id', 'scroll-to-top' );
 		scrollButton.classList.add( 'scroll-to-top-button' );
+		scrollButton.ariaLabel = dynamicoProScrollToTop.label;
 
 		// Add icon to Scroll to Top button.
 		var icon = new DOMParser().parseFromString( dynamicoProScrollToTop.icon, 'text/html' ).body.firstElementChild;

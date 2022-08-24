@@ -49,10 +49,13 @@ class Dynamico_Pro_Scroll_To_Top {
 		// Call Credit Link function of theme if credit link is activated.
 		if ( true === $theme_options['scroll_to_top'] && ! self::is_amp() ) :
 
-			wp_enqueue_script( 'dynamico-pro-scroll-to-top', DYNAMICO_PRO_PLUGIN_URL . 'assets/js/scroll-to-top.min.js', array(), '20220121', true );
+			wp_enqueue_script( 'dynamico-pro-scroll-to-top', DYNAMICO_PRO_PLUGIN_URL . 'assets/js/scroll-to-top.min.js', array(), '20220824', true );
 
 			// Passing Parameters to navigation.js.
-			wp_localize_script( 'dynamico-pro-scroll-to-top', 'dynamicoProScrollToTop', array( 'icon' => dynamico_get_svg( 'collapse' ) ) );
+			wp_localize_script( 'dynamico-pro-scroll-to-top', 'dynamicoProScrollToTop', array(
+				'label' => esc_html__( 'Scroll to top', 'dynamico-pro' ),
+				'icon'  => dynamico_get_svg( 'collapse' ),
+			) );
 
 		endif;
 	}
