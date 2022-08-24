@@ -77,7 +77,7 @@ class Dynamico_Pro_Header_Search {
 
 				<button class="header-search-icon" aria-expanded="false" aria-controls="header-search-dropdown" <?php self::amp_search_toggle(); ?>>
 					<?php echo dynamico_get_svg( 'search' ); ?>
-					<span class="screen-reader-text"><?php esc_html_e( 'Search', 'dynamico-pro' ); ?></span>
+					<span class="screen-reader-text"><?php esc_html_e( 'Toggle search form', 'dynamico-pro' ); ?></span>
 				</button>
 
 				<div id="header-search-dropdown" class="header-search-form" <?php self::amp_search_is_toggled(); ?>>
