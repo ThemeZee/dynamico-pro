@@ -5,14 +5,14 @@ Plugin URI: http://themezee.com/addons/dynamico-pro/
 Description: Dynamico Pro is an add-on plugin for Dynamico including additional customization options for colors and typography as well as extra features like navigation menus, header search and footer widgets.
 Author: ThemeZee
 Author URI: https://themezee.com/
-Version: 1.0.3
+Version: 1.0.4
 Text Domain: dynamico-pro
 Domain Path: /languages/
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Dynamico Pro
-Copyright(C) 2021, ThemeZee.com - support@themezee.com
+Copyright(C) 2022, ThemeZee.com - support@themezee.com
 */
 
 // Exit if accessed directly.
@@ -60,7 +60,7 @@ class Dynamico_Pro {
 		define( 'DYNAMICO_PRO_NAME', 'Dynamico Pro' );
 
 		// Define Version Number.
-		define( 'DYNAMICO_PRO_VERSION', '1.0.3' );
+		define( 'DYNAMICO_PRO_VERSION', '1.0.4' );
 
 		// Define Plugin Name.
 		define( 'DYNAMICO_PRO_PRODUCT_ID', 239701 );
