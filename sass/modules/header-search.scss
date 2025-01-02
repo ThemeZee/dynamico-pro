@@ -1,20 +1,22 @@
+@use "../_mixins";
+
 .header-search {
 	.header-search-icon {
 		position: absolute;
 		right: 0;
 		display: inline-block;
 		padding: 1.15rem 1.25rem;
-		@include color(--navi-text-color);
-		@include background(--navi-background-color);
+		@include mixins.color(--navi-text-color);
+		@include mixins.background(--navi-background-color);
 		z-index: 99;
-		@include font-size(16);
+		@include mixins.font-size(16);
 
 		&:hover,
 		&:active,
 		&:focus {
 			cursor: pointer;
-			@include color(--navi-hover-text-color);
-			@include background(--navi-hover-color);
+			@include mixins.color(--navi-hover-text-color);
+			@include mixins.background(--navi-hover-color);
 		}
 
 		&:focus {
@@ -39,7 +41,7 @@
 		display: none;
 		margin: 0;
 		padding: 1.25rem;
-		@include background(--submenu-background-color);
+		@include mixins.background(--submenu-background-color);
 		border-top: none;
 		box-shadow: 0 0 2px #444;
 		z-index: 999;

@@ -1,5 +1,8 @@
+@use "../_mixins";
+@use "../_variables";
+
 .header-bar-wrap {
-	@include background(--header-bar-background-color);
+	@include mixins.background(--header-bar-background-color);
 }
 
 .header-bar {
@@ -22,9 +25,9 @@
 .top-navigation ul {
 	margin: 0;
 	padding: 0;
-	@include color(--header-bar-text-color);
+	@include mixins.color(--header-bar-text-color);
 	list-style: none;
-	@include font-size(14);
+	@include mixins.font-size(14);
 }
 
 /* Hide the menu on small screens when JavaScript is available. */
@@ -55,7 +58,7 @@
 .top-navigation ul a,
 .top-navigation ul a:link,
 .top-navigation ul a:visited {
-	@include color(--header-bar-text-color);
+	@include mixins.color(--header-bar-text-color);
 	text-decoration: none;
 	transition: all 0.15s ease;
 }
@@ -63,8 +66,8 @@
 .top-navigation ul a:hover,
 .top-navigation ul a:active,
 .top-navigation ul a:focus {
-	@include color(--header-bar-hover-text-color);
-	@include background(--header-bar-hover-color);
+	@include mixins.color(--header-bar-hover-text-color);
+	@include mixins.background(--header-bar-hover-color);
 }
 
 .top-navigation ul li.current-menu-item > a {
@@ -73,7 +76,7 @@
 
 /* Submenus */
 .top-navigation ul ul {
-	@include background(--header-bar-background-color);
+	@include mixins.background(--header-bar-background-color);
 }
 
 .is-amp-page .top-navigation ul button.toggled-on + ul,
@@ -101,9 +104,9 @@
 	padding: 0.4rem 0.8rem;
 	border: none;
 	background: none;
-	@include color(--header-bar-text-color);
+	@include mixins.color(--header-bar-text-color);
 	text-decoration: none;
-	@include font-size(14);
+	@include mixins.font-size(14);
 	text-align: left;
 	transition: all 0.15s ease;
 }
@@ -114,14 +117,14 @@
 
 .secondary-menu-toggle:focus {
 	outline: thin dotted;
-	@include color(--header-bar-text-color);
+	@include mixins.color(--header-bar-text-color);
 	background: none;
 }
 
 .secondary-menu-toggle:hover,
 .secondary-menu-toggle:active {
-	@include color(--header-bar-hover-text-color);
-	@include background(--header-bar-hover-color);
+	@include mixins.color(--header-bar-hover-text-color);
+	@include mixins.background(--header-bar-hover-color);
 	cursor: pointer;
 }
 
@@ -151,12 +154,12 @@
 	padding: 0.75rem 1rem;
 	background: none;
 	border: none;
-	@include font-size(14);
+	@include mixins.font-size(14);
 }
 
 .top-navigation .dropdown-toggle:focus {
 	outline: thin dotted;
-	@include color(--header-bar-text-color);
+	@include mixins.color(--header-bar-text-color);
 	background: none;
 }
 
@@ -194,7 +197,7 @@
 	}
 
 	body.wide-theme-layout .site .header-bar {
-		max-width: calc(#{$themeWidth} - 3rem);
+		max-width: calc(#{variables.$themeWidth} - 3rem);
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -227,7 +230,7 @@
 	}
 
 	.top-navigation ul {
-		@include font-size(14);
+		@include mixins.font-size(14);
 	}
 
 	.top-navigation ul a {

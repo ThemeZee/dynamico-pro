@@ -1,8 +1,11 @@
+@use "../_mixins";
+@use "../_variables";
+
 .footer-widgets-background {
 	display: flex;
 	padding: 1.25rem 1.25rem 0;
-	@include color(--footer-widgets-text-color);
-	@include background(--footer-widgets-background-color);
+	@include mixins.color(--footer-widgets-text-color);
+	@include mixins.background(--footer-widgets-background-color);
 }
 
 .footer-widgets-wrap {
@@ -13,7 +16,7 @@ body.wide-theme-layout .site {
 	.footer-widgets-wrap {
 		margin-left: auto;
 		margin-right: auto;
-		max-width: $contentFullwidth;
+		max-width: variables.$contentFullwidth;
 	}
 }
 
@@ -21,28 +24,28 @@ body.wide-theme-layout .site {
 .footer-widgets .widget {
 	margin-bottom: 1.25rem;
 	padding: 1.5rem;
-	@include background(--footer-widgets-overlay-color);
+	@include mixins.background(--footer-widgets-overlay-color);
 
 	.widget-title {
 		margin: -0.5rem -0.5rem 1rem;
 		padding: 0.5rem 0.75rem;
-		@include color(--footer-widgets-text-color);
-		@include background(--footer-widgets-title-color);
-		@include font-size(15);
-		@include font-family(--widget-title-font);
-		@include font-weight(--widget-title-font-weight);
-		@include text-transform(--widget-title-text-transform);
-		@include line-height(--title-line-height);
+		@include mixins.color(--footer-widgets-text-color);
+		@include mixins.background(--footer-widgets-title-color);
+		@include mixins.font-size(15);
+		@include mixins.font-family(--widget-title-font);
+		@include mixins.font-weight(--widget-title-font-weight);
+		@include mixins.text-transform(--widget-title-text-transform);
+		@include mixins.line-height(--title-line-height);
 	}
 
 	a:link,
 	a:visited {
-		@include color(--footer-widgets-link-color);
+		@include mixins.color(--footer-widgets-link-color);
 	}
 
 	a:hover,
 	a:active {
-		@include color(--footer-widgets-link-hover-color);
+		@include mixins.color(--footer-widgets-link-hover-color);
 	}
 
 	input[type="text"],
@@ -53,8 +56,8 @@ body.wide-theme-layout .site {
 	input[type="submit"],
 	textarea {
 		border: 1px solid;
-		@include border-color(--footer-widgets-border-color);
-		@include color(--footer-widgets-link-hover-color);
+		@include mixins.border-color(--footer-widgets-border-color);
+		@include mixins.color(--footer-widgets-link-hover-color);
 	}
 
 	input[type="text"]:focus,
@@ -63,14 +66,14 @@ body.wide-theme-layout .site {
 	input[type="password"]:focus,
 	input[type="search"]:focus,
 	textarea:focus {
-		@include color(--footer-widgets-text-color);
+		@include mixins.color(--footer-widgets-text-color);
 	}
 
 	button,
 	input[type="button"],
 	input[type="reset"],
 	input[type="submit"] {
-		@include color(--footer-widgets-link-hover-color);
+		@include mixins.color(--footer-widgets-link-hover-color);
 	}
 
 	button:hover,
@@ -85,7 +88,7 @@ body.wide-theme-layout .site {
 	input[type="button"]:active,
 	input[type="reset"]:active,
 	input[type="submit"]:active {
-		@include color(--footer-widgets-border-color);
+		@include mixins.color(--footer-widgets-border-color);
 	}
 
 	.tzwb-posts-list .tzwb-entry-meta,
@@ -93,12 +96,12 @@ body.wide-theme-layout .site {
 	.tzwb-posts-list .tzwb-entry-meta a:link,
 	.tzwb-posts-list .tzwb-entry-meta a:visited,
 	.tzwb-comments-list .tzwb-comment-date {
-		@include color(--footer-widgets-link-hover-color);
+		@include mixins.color(--footer-widgets-link-hover-color);
 	}
 
 	.tzwb-posts-list .tzwb-entry-meta a:hover,
 	.tzwb-posts-list .tzwb-entry-meta a:active {
-		@include color(--footer-widgets-text-color);
+		@include mixins.color(--footer-widgets-text-color);
 	}
 }
 

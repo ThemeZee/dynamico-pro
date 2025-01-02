@@ -1,7 +1,9 @@
+@use "../_mixins";
+
 .entry-author {
 	margin: 1.25rem 0 0;
 	padding: 1rem;
-	@include background(--post-meta-background-color);
+	@include mixins.background(--post-meta-background-color);
 	text-align: center;
 }
 
@@ -16,7 +18,7 @@
 
 .entry-author .author-heading .author-title {
 	margin: 0 0 0.5rem;
-	@include font-size(18);
+	@include mixins.font-size(18);
 }
 
 .entry-author .author-heading .author-link {
