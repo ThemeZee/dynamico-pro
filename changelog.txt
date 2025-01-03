@@ -2,6 +2,9 @@
 Dynamico Pro Changelog
 ===================================
 
+= 1.0.6 - 2025-01-03 =
+* improved tooling and code styling
+
 = 1.0.5 - 2023-09-17 =
 * updated plugin updater
 
